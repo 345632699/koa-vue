@@ -1,0 +1,2366 @@
+[2018-08-17T14:09:23.094] [INFO] ./logs/sponge-city-2018-08-16.log - sql-format => select * from sp_task_organization where parent_id=0
+[2018-08-17T14:09:23.100] [INFO] ./logs/sponge-city-2018-08-16.log - sql => select * from sp_task_organization where parent_id=0
+[2018-08-17T14:09:23.107] [INFO] ./logs/sponge-city-2018-08-16.log - query => Query {
+  _events: {},
+  _eventsCount: 0,
+  _maxListeners: undefined,
+  _callback: [Function],
+  _callSite: Error
+    at Pool.query (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/mysql/lib/Pool.js:199:23)
+    at CommonDao._query (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/commonDao.js:89:24)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/commonDao.js:70:12
+    at new Promise (<anonymous>)
+    at CommonDao.select (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/commonDao.js:69:12)
+    at Function._callee$ (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/taskDao.js:13:38)
+    at tryCatch (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:62:40)
+    at Generator.invoke [as _invoke] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:296:22)
+    at Generator.prototype.(anonymous function) [as next] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:114:21)
+    at step (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4286:191)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4286:437
+    at new Promise (<anonymous>)
+    at Function.<anonymous> (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4286:99)
+    at Function.getOrganizationList (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4332:21)
+    at _callee5$ (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/services/taskService.js:78:32)
+    at tryCatch (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:62:40)
+    at Generator.invoke [as _invoke] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:296:22)
+    at Generator.prototype.(anonymous function) [as next] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:114:21)
+    at step (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:3928:191)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:3928:437
+    at new Promise (<anonymous>)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:3928:99,
+  _ended: false,
+  _timeout: undefined,
+  _idleNext: null,
+  _idlePrev: null,
+  _idleStart: null,
+  _idleTimeout: -1,
+  _repeat: null,
+  sql: 'select * from sp_task_organization where parent_id=0',
+  values: undefined,
+  typeCast: true,
+  nestTables: false,
+  _resultSet: null,
+  _results: [],
+  _fields: [],
+  _index: 0,
+  _loadError: null }
+[2018-08-17T14:09:23.247] [INFO] ./logs/sponge-city-2018-08-16.log - sql-format => select * from sp_task_organization where parent_id > 0
+[2018-08-17T14:09:23.247] [INFO] ./logs/sponge-city-2018-08-16.log - sql => select * from sp_task_organization where parent_id > 0
+[2018-08-17T14:09:23.248] [INFO] ./logs/sponge-city-2018-08-16.log - query => Query {
+  _events: {},
+  _eventsCount: 0,
+  _maxListeners: undefined,
+  _callback: [Function],
+  _callSite: Error
+    at Pool.query (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/mysql/lib/Pool.js:199:23)
+    at CommonDao._query (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/commonDao.js:89:24)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/commonDao.js:70:12
+    at new Promise (<anonymous>)
+    at CommonDao.select (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/commonDao.js:69:12)
+    at Function._callee2$ (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/taskDao.js:23:38)
+    at tryCatch (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:62:40)
+    at Generator.invoke [as _invoke] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:296:22)
+    at Generator.prototype.(anonymous function) [as next] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:114:21)
+    at step (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4286:191)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4286:437
+    at new Promise (<anonymous>)
+    at Function.<anonymous> (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4286:99)
+    at Function.getChildList (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4372:22)
+    at _callee5$ (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/services/taskService.js:79:33)
+    at tryCatch (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:62:40)
+    at Generator.invoke [as _invoke] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:296:22)
+    at Generator.prototype.(anonymous function) [as next] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:114:21)
+    at step (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:3928:191)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:3928:361
+    at process._tickCallback (internal/process/next_tick.js:68:7),
+  _ended: false,
+  _timeout: undefined,
+  _idleNext: null,
+  _idlePrev: null,
+  _idleStart: null,
+  _idleTimeout: -1,
+  _repeat: null,
+  sql: 'select * from sp_task_organization where parent_id > 0',
+  values: undefined,
+  typeCast: true,
+  nestTables: false,
+  _resultSet: null,
+  _results: [],
+  _fields: [],
+  _index: 0,
+  _loadError: null }
+[2018-08-17T14:09:41.505] [INFO] ./logs/sponge-city-2018-08-16.log - sql-format => select * from sp_task_organization where parent_id=0
+[2018-08-17T14:09:41.505] [INFO] ./logs/sponge-city-2018-08-16.log - sql => select * from sp_task_organization where parent_id=0
+[2018-08-17T14:09:41.506] [INFO] ./logs/sponge-city-2018-08-16.log - query => Query {
+  _events: {},
+  _eventsCount: 0,
+  _maxListeners: undefined,
+  _callback: [Function],
+  _callSite: Error
+    at Pool.query (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/mysql/lib/Pool.js:199:23)
+    at CommonDao._query (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/commonDao.js:89:24)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/commonDao.js:70:12
+    at new Promise (<anonymous>)
+    at CommonDao.select (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/commonDao.js:69:12)
+    at Function._callee$ (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/taskDao.js:13:38)
+    at tryCatch (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:62:40)
+    at Generator.invoke [as _invoke] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:296:22)
+    at Generator.prototype.(anonymous function) [as next] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:114:21)
+    at step (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4286:191)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4286:437
+    at new Promise (<anonymous>)
+    at Function.<anonymous> (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4286:99)
+    at Function.getOrganizationList (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4332:21)
+    at _callee5$ (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/services/taskService.js:78:32)
+    at tryCatch (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:62:40)
+    at Generator.invoke [as _invoke] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:296:22)
+    at Generator.prototype.(anonymous function) [as next] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:114:21)
+    at step (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:3928:191)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:3928:437
+    at new Promise (<anonymous>)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:3928:99,
+  _ended: false,
+  _timeout: undefined,
+  _idleNext: null,
+  _idlePrev: null,
+  _idleStart: null,
+  _idleTimeout: -1,
+  _repeat: null,
+  sql: 'select * from sp_task_organization where parent_id=0',
+  values: undefined,
+  typeCast: true,
+  nestTables: false,
+  _resultSet: null,
+  _results: [],
+  _fields: [],
+  _index: 0,
+  _loadError: null }
+[2018-08-17T14:09:41.518] [INFO] ./logs/sponge-city-2018-08-16.log - sql-format => select * from sp_task_organization where parent_id > 0
+[2018-08-17T14:09:41.518] [INFO] ./logs/sponge-city-2018-08-16.log - sql => select * from sp_task_organization where parent_id > 0
+[2018-08-17T14:09:41.519] [INFO] ./logs/sponge-city-2018-08-16.log - query => Query {
+  _events: {},
+  _eventsCount: 0,
+  _maxListeners: undefined,
+  _callback: [Function],
+  _callSite: Error
+    at Pool.query (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/mysql/lib/Pool.js:199:23)
+    at CommonDao._query (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/commonDao.js:89:24)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/commonDao.js:70:12
+    at new Promise (<anonymous>)
+    at CommonDao.select (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/commonDao.js:69:12)
+    at Function._callee2$ (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/taskDao.js:23:38)
+    at tryCatch (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:62:40)
+    at Generator.invoke [as _invoke] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:296:22)
+    at Generator.prototype.(anonymous function) [as next] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:114:21)
+    at step (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4286:191)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4286:437
+    at new Promise (<anonymous>)
+    at Function.<anonymous> (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4286:99)
+    at Function.getChildList (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4372:22)
+    at _callee5$ (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/services/taskService.js:79:33)
+    at tryCatch (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:62:40)
+    at Generator.invoke [as _invoke] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:296:22)
+    at Generator.prototype.(anonymous function) [as next] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:114:21)
+    at step (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:3928:191)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:3928:361
+    at process._tickCallback (internal/process/next_tick.js:68:7),
+  _ended: false,
+  _timeout: undefined,
+  _idleNext: null,
+  _idlePrev: null,
+  _idleStart: null,
+  _idleTimeout: -1,
+  _repeat: null,
+  sql: 'select * from sp_task_organization where parent_id > 0',
+  values: undefined,
+  typeCast: true,
+  nestTables: false,
+  _resultSet: null,
+  _results: [],
+  _fields: [],
+  _index: 0,
+  _loadError: null }
+[2018-08-17T14:18:42.906] [INFO] ./logs/sponge-city-2018-08-16.log - sql-format => select * from sp_task_organization where parent_id=0
+[2018-08-17T14:18:42.906] [INFO] ./logs/sponge-city-2018-08-16.log - sql => select * from sp_task_organization where parent_id=0
+[2018-08-17T14:18:42.907] [INFO] ./logs/sponge-city-2018-08-16.log - query => Query {
+  _events: {},
+  _eventsCount: 0,
+  _maxListeners: undefined,
+  _callback: [Function],
+  _callSite: Error
+    at Pool.query (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/mysql/lib/Pool.js:199:23)
+    at CommonDao._query (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/commonDao.js:89:24)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/commonDao.js:70:12
+    at new Promise (<anonymous>)
+    at CommonDao.select (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/commonDao.js:69:12)
+    at Function._callee$ (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/taskDao.js:13:38)
+    at tryCatch (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:62:40)
+    at Generator.invoke [as _invoke] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:296:22)
+    at Generator.prototype.(anonymous function) [as next] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:114:21)
+    at step (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4286:191)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4286:437
+    at new Promise (<anonymous>)
+    at Function.<anonymous> (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4286:99)
+    at Function.getOrganizationList (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4332:21)
+    at _callee5$ (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/services/taskService.js:78:32)
+    at tryCatch (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:62:40)
+    at Generator.invoke [as _invoke] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:296:22)
+    at Generator.prototype.(anonymous function) [as next] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:114:21)
+    at step (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:3928:191)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:3928:437
+    at new Promise (<anonymous>)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:3928:99,
+  _ended: false,
+  _timeout: undefined,
+  _idleNext: null,
+  _idlePrev: null,
+  _idleStart: null,
+  _idleTimeout: -1,
+  _repeat: null,
+  sql: 'select * from sp_task_organization where parent_id=0',
+  values: undefined,
+  typeCast: true,
+  nestTables: false,
+  _resultSet: null,
+  _results: [],
+  _fields: [],
+  _index: 0,
+  _loadError: null }
+[2018-08-17T14:18:42.916] [INFO] ./logs/sponge-city-2018-08-16.log - sql-format => select * from sp_task_organization where parent_id > 0
+[2018-08-17T14:18:42.916] [INFO] ./logs/sponge-city-2018-08-16.log - sql => select * from sp_task_organization where parent_id > 0
+[2018-08-17T14:18:42.918] [INFO] ./logs/sponge-city-2018-08-16.log - query => Query {
+  _events: {},
+  _eventsCount: 0,
+  _maxListeners: undefined,
+  _callback: [Function],
+  _callSite: Error
+    at Pool.query (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/mysql/lib/Pool.js:199:23)
+    at CommonDao._query (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/commonDao.js:89:24)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/commonDao.js:70:12
+    at new Promise (<anonymous>)
+    at CommonDao.select (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/commonDao.js:69:12)
+    at Function._callee2$ (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/taskDao.js:23:38)
+    at tryCatch (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:62:40)
+    at Generator.invoke [as _invoke] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:296:22)
+    at Generator.prototype.(anonymous function) [as next] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:114:21)
+    at step (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4286:191)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4286:437
+    at new Promise (<anonymous>)
+    at Function.<anonymous> (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4286:99)
+    at Function.getChildList (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4372:22)
+    at _callee5$ (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/services/taskService.js:79:33)
+    at tryCatch (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:62:40)
+    at Generator.invoke [as _invoke] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:296:22)
+    at Generator.prototype.(anonymous function) [as next] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:114:21)
+    at step (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:3928:191)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:3928:361
+    at process._tickCallback (internal/process/next_tick.js:68:7),
+  _ended: false,
+  _timeout: undefined,
+  _idleNext: null,
+  _idlePrev: null,
+  _idleStart: null,
+  _idleTimeout: -1,
+  _repeat: null,
+  sql: 'select * from sp_task_organization where parent_id > 0',
+  values: undefined,
+  typeCast: true,
+  nestTables: false,
+  _resultSet: null,
+  _results: [],
+  _fields: [],
+  _index: 0,
+  _loadError: null }
+[2018-08-17T14:18:44.197] [INFO] ./logs/sponge-city-2018-08-16.log - sql-format => select * from sp_task_organization where parent_id=0
+[2018-08-17T14:18:44.198] [INFO] ./logs/sponge-city-2018-08-16.log - sql => select * from sp_task_organization where parent_id=0
+[2018-08-17T14:18:44.198] [INFO] ./logs/sponge-city-2018-08-16.log - query => Query {
+  _events: {},
+  _eventsCount: 0,
+  _maxListeners: undefined,
+  _callback: [Function],
+  _callSite: Error
+    at Pool.query (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/mysql/lib/Pool.js:199:23)
+    at CommonDao._query (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/commonDao.js:89:24)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/commonDao.js:70:12
+    at new Promise (<anonymous>)
+    at CommonDao.select (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/commonDao.js:69:12)
+    at Function._callee$ (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/taskDao.js:13:38)
+    at tryCatch (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:62:40)
+    at Generator.invoke [as _invoke] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:296:22)
+    at Generator.prototype.(anonymous function) [as next] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:114:21)
+    at step (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4286:191)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4286:437
+    at new Promise (<anonymous>)
+    at Function.<anonymous> (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4286:99)
+    at Function.getOrganizationList (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4332:21)
+    at _callee5$ (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/services/taskService.js:78:32)
+    at tryCatch (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:62:40)
+    at Generator.invoke [as _invoke] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:296:22)
+    at Generator.prototype.(anonymous function) [as next] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:114:21)
+    at step (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:3928:191)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:3928:437
+    at new Promise (<anonymous>)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:3928:99,
+  _ended: false,
+  _timeout: undefined,
+  _idleNext: null,
+  _idlePrev: null,
+  _idleStart: null,
+  _idleTimeout: -1,
+  _repeat: null,
+  sql: 'select * from sp_task_organization where parent_id=0',
+  values: undefined,
+  typeCast: true,
+  nestTables: false,
+  _resultSet: null,
+  _results: [],
+  _fields: [],
+  _index: 0,
+  _loadError: null }
+[2018-08-17T14:18:44.210] [INFO] ./logs/sponge-city-2018-08-16.log - sql-format => select * from sp_task_organization where parent_id > 0
+[2018-08-17T14:18:44.210] [INFO] ./logs/sponge-city-2018-08-16.log - sql => select * from sp_task_organization where parent_id > 0
+[2018-08-17T14:18:44.210] [INFO] ./logs/sponge-city-2018-08-16.log - query => Query {
+  _events: {},
+  _eventsCount: 0,
+  _maxListeners: undefined,
+  _callback: [Function],
+  _callSite: Error
+    at Pool.query (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/mysql/lib/Pool.js:199:23)
+    at CommonDao._query (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/commonDao.js:89:24)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/commonDao.js:70:12
+    at new Promise (<anonymous>)
+    at CommonDao.select (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/commonDao.js:69:12)
+    at Function._callee2$ (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/taskDao.js:23:38)
+    at tryCatch (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:62:40)
+    at Generator.invoke [as _invoke] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:296:22)
+    at Generator.prototype.(anonymous function) [as next] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:114:21)
+    at step (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4286:191)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4286:437
+    at new Promise (<anonymous>)
+    at Function.<anonymous> (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4286:99)
+    at Function.getChildList (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4372:22)
+    at _callee5$ (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/services/taskService.js:79:33)
+    at tryCatch (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:62:40)
+    at Generator.invoke [as _invoke] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:296:22)
+    at Generator.prototype.(anonymous function) [as next] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:114:21)
+    at step (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:3928:191)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:3928:361
+    at process._tickCallback (internal/process/next_tick.js:68:7),
+  _ended: false,
+  _timeout: undefined,
+  _idleNext: null,
+  _idlePrev: null,
+  _idleStart: null,
+  _idleTimeout: -1,
+  _repeat: null,
+  sql: 'select * from sp_task_organization where parent_id > 0',
+  values: undefined,
+  typeCast: true,
+  nestTables: false,
+  _resultSet: null,
+  _results: [],
+  _fields: [],
+  _index: 0,
+  _loadError: null }
+[2018-08-17T14:24:50.676] [INFO] ./logs/sponge-city-2018-08-16.log - sql-format => select * from sp_task_organization where parent_id=0
+[2018-08-17T14:24:50.676] [INFO] ./logs/sponge-city-2018-08-16.log - sql => select * from sp_task_organization where parent_id=0
+[2018-08-17T14:24:50.676] [INFO] ./logs/sponge-city-2018-08-16.log - query => Query {
+  _events: {},
+  _eventsCount: 0,
+  _maxListeners: undefined,
+  _callback: [Function],
+  _callSite: Error
+    at Pool.query (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/mysql/lib/Pool.js:199:23)
+    at CommonDao._query (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/commonDao.js:89:24)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/commonDao.js:70:12
+    at new Promise (<anonymous>)
+    at CommonDao.select (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/commonDao.js:69:12)
+    at Function._callee$ (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/taskDao.js:13:38)
+    at tryCatch (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:62:40)
+    at Generator.invoke [as _invoke] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:296:22)
+    at Generator.prototype.(anonymous function) [as next] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:114:21)
+    at step (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4286:191)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4286:437
+    at new Promise (<anonymous>)
+    at Function.<anonymous> (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4286:99)
+    at Function.getOrganizationList (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4332:21)
+    at _callee5$ (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/services/taskService.js:78:32)
+    at tryCatch (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:62:40)
+    at Generator.invoke [as _invoke] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:296:22)
+    at Generator.prototype.(anonymous function) [as next] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:114:21)
+    at step (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:3928:191)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:3928:437
+    at new Promise (<anonymous>)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:3928:99,
+  _ended: false,
+  _timeout: undefined,
+  _idleNext: null,
+  _idlePrev: null,
+  _idleStart: null,
+  _idleTimeout: -1,
+  _repeat: null,
+  sql: 'select * from sp_task_organization where parent_id=0',
+  values: undefined,
+  typeCast: true,
+  nestTables: false,
+  _resultSet: null,
+  _results: [],
+  _fields: [],
+  _index: 0,
+  _loadError: null }
+[2018-08-17T14:24:50.683] [INFO] ./logs/sponge-city-2018-08-16.log - sql-format => select * from sp_task_organization where parent_id > 0
+[2018-08-17T14:24:50.683] [INFO] ./logs/sponge-city-2018-08-16.log - sql => select * from sp_task_organization where parent_id > 0
+[2018-08-17T14:24:50.683] [INFO] ./logs/sponge-city-2018-08-16.log - query => Query {
+  _events: {},
+  _eventsCount: 0,
+  _maxListeners: undefined,
+  _callback: [Function],
+  _callSite: Error
+    at Pool.query (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/mysql/lib/Pool.js:199:23)
+    at CommonDao._query (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/commonDao.js:89:24)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/commonDao.js:70:12
+    at new Promise (<anonymous>)
+    at CommonDao.select (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/commonDao.js:69:12)
+    at Function._callee2$ (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/taskDao.js:23:38)
+    at tryCatch (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:62:40)
+    at Generator.invoke [as _invoke] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:296:22)
+    at Generator.prototype.(anonymous function) [as next] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:114:21)
+    at step (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4286:191)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4286:437
+    at new Promise (<anonymous>)
+    at Function.<anonymous> (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4286:99)
+    at Function.getChildList (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4372:22)
+    at _callee5$ (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/services/taskService.js:79:33)
+    at tryCatch (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:62:40)
+    at Generator.invoke [as _invoke] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:296:22)
+    at Generator.prototype.(anonymous function) [as next] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:114:21)
+    at step (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:3928:191)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:3928:361
+    at process._tickCallback (internal/process/next_tick.js:68:7),
+  _ended: false,
+  _timeout: undefined,
+  _idleNext: null,
+  _idlePrev: null,
+  _idleStart: null,
+  _idleTimeout: -1,
+  _repeat: null,
+  sql: 'select * from sp_task_organization where parent_id > 0',
+  values: undefined,
+  typeCast: true,
+  nestTables: false,
+  _resultSet: null,
+  _results: [],
+  _fields: [],
+  _index: 0,
+  _loadError: null }
+[2018-08-17T14:24:53.223] [INFO] ./logs/sponge-city-2018-08-16.log - sql-format => select * from sp_task_organization where parent_id=0
+[2018-08-17T14:24:53.223] [INFO] ./logs/sponge-city-2018-08-16.log - sql => select * from sp_task_organization where parent_id=0
+[2018-08-17T14:24:53.224] [INFO] ./logs/sponge-city-2018-08-16.log - query => Query {
+  _events: {},
+  _eventsCount: 0,
+  _maxListeners: undefined,
+  _callback: [Function],
+  _callSite: Error
+    at Pool.query (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/mysql/lib/Pool.js:199:23)
+    at CommonDao._query (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/commonDao.js:89:24)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/commonDao.js:70:12
+    at new Promise (<anonymous>)
+    at CommonDao.select (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/commonDao.js:69:12)
+    at Function._callee$ (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/taskDao.js:13:38)
+    at tryCatch (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:62:40)
+    at Generator.invoke [as _invoke] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:296:22)
+    at Generator.prototype.(anonymous function) [as next] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:114:21)
+    at step (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4286:191)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4286:437
+    at new Promise (<anonymous>)
+    at Function.<anonymous> (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4286:99)
+    at Function.getOrganizationList (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4332:21)
+    at _callee5$ (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/services/taskService.js:78:32)
+    at tryCatch (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:62:40)
+    at Generator.invoke [as _invoke] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:296:22)
+    at Generator.prototype.(anonymous function) [as next] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:114:21)
+    at step (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:3928:191)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:3928:437
+    at new Promise (<anonymous>)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:3928:99,
+  _ended: false,
+  _timeout: undefined,
+  _idleNext: null,
+  _idlePrev: null,
+  _idleStart: null,
+  _idleTimeout: -1,
+  _repeat: null,
+  sql: 'select * from sp_task_organization where parent_id=0',
+  values: undefined,
+  typeCast: true,
+  nestTables: false,
+  _resultSet: null,
+  _results: [],
+  _fields: [],
+  _index: 0,
+  _loadError: null }
+[2018-08-17T14:24:53.231] [INFO] ./logs/sponge-city-2018-08-16.log - sql-format => select * from sp_task_organization where parent_id > 0
+[2018-08-17T14:24:53.232] [INFO] ./logs/sponge-city-2018-08-16.log - sql => select * from sp_task_organization where parent_id > 0
+[2018-08-17T14:24:53.232] [INFO] ./logs/sponge-city-2018-08-16.log - query => Query {
+  _events: {},
+  _eventsCount: 0,
+  _maxListeners: undefined,
+  _callback: [Function],
+  _callSite: Error
+    at Pool.query (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/mysql/lib/Pool.js:199:23)
+    at CommonDao._query (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/commonDao.js:89:24)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/commonDao.js:70:12
+    at new Promise (<anonymous>)
+    at CommonDao.select (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/commonDao.js:69:12)
+    at Function._callee2$ (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/taskDao.js:23:38)
+    at tryCatch (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:62:40)
+    at Generator.invoke [as _invoke] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:296:22)
+    at Generator.prototype.(anonymous function) [as next] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:114:21)
+    at step (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4286:191)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4286:437
+    at new Promise (<anonymous>)
+    at Function.<anonymous> (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4286:99)
+    at Function.getChildList (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4372:22)
+    at _callee5$ (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/services/taskService.js:79:33)
+    at tryCatch (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:62:40)
+    at Generator.invoke [as _invoke] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:296:22)
+    at Generator.prototype.(anonymous function) [as next] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:114:21)
+    at step (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:3928:191)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:3928:361
+    at process._tickCallback (internal/process/next_tick.js:68:7),
+  _ended: false,
+  _timeout: undefined,
+  _idleNext: null,
+  _idlePrev: null,
+  _idleStart: null,
+  _idleTimeout: -1,
+  _repeat: null,
+  sql: 'select * from sp_task_organization where parent_id > 0',
+  values: undefined,
+  typeCast: true,
+  nestTables: false,
+  _resultSet: null,
+  _results: [],
+  _fields: [],
+  _index: 0,
+  _loadError: null }
+[2018-08-17T14:26:05.112] [INFO] ./logs/sponge-city-2018-08-16.log - sql-format => select * from sp_task_organization where parent_id=0
+[2018-08-17T14:26:05.112] [INFO] ./logs/sponge-city-2018-08-16.log - sql => select * from sp_task_organization where parent_id=0
+[2018-08-17T14:26:05.113] [INFO] ./logs/sponge-city-2018-08-16.log - query => Query {
+  _events: {},
+  _eventsCount: 0,
+  _maxListeners: undefined,
+  _callback: [Function],
+  _callSite: Error
+    at Pool.query (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/mysql/lib/Pool.js:199:23)
+    at CommonDao._query (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/commonDao.js:89:24)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/commonDao.js:70:12
+    at new Promise (<anonymous>)
+    at CommonDao.select (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/commonDao.js:69:12)
+    at Function._callee$ (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/taskDao.js:13:38)
+    at tryCatch (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:62:40)
+    at Generator.invoke [as _invoke] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:296:22)
+    at Generator.prototype.(anonymous function) [as next] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:114:21)
+    at step (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4286:191)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4286:437
+    at new Promise (<anonymous>)
+    at Function.<anonymous> (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4286:99)
+    at Function.getOrganizationList (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4332:21)
+    at _callee5$ (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/services/taskService.js:78:32)
+    at tryCatch (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:62:40)
+    at Generator.invoke [as _invoke] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:296:22)
+    at Generator.prototype.(anonymous function) [as next] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:114:21)
+    at step (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:3928:191)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:3928:437
+    at new Promise (<anonymous>)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:3928:99,
+  _ended: false,
+  _timeout: undefined,
+  _idleNext: null,
+  _idlePrev: null,
+  _idleStart: null,
+  _idleTimeout: -1,
+  _repeat: null,
+  sql: 'select * from sp_task_organization where parent_id=0',
+  values: undefined,
+  typeCast: true,
+  nestTables: false,
+  _resultSet: null,
+  _results: [],
+  _fields: [],
+  _index: 0,
+  _loadError: null }
+[2018-08-17T14:26:05.119] [INFO] ./logs/sponge-city-2018-08-16.log - sql-format => select * from sp_task_organization where parent_id > 0
+[2018-08-17T14:26:05.119] [INFO] ./logs/sponge-city-2018-08-16.log - sql => select * from sp_task_organization where parent_id > 0
+[2018-08-17T14:26:05.119] [INFO] ./logs/sponge-city-2018-08-16.log - query => Query {
+  _events: {},
+  _eventsCount: 0,
+  _maxListeners: undefined,
+  _callback: [Function],
+  _callSite: Error
+    at Pool.query (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/mysql/lib/Pool.js:199:23)
+    at CommonDao._query (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/commonDao.js:89:24)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/commonDao.js:70:12
+    at new Promise (<anonymous>)
+    at CommonDao.select (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/commonDao.js:69:12)
+    at Function._callee2$ (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/taskDao.js:23:38)
+    at tryCatch (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:62:40)
+    at Generator.invoke [as _invoke] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:296:22)
+    at Generator.prototype.(anonymous function) [as next] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:114:21)
+    at step (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4286:191)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4286:437
+    at new Promise (<anonymous>)
+    at Function.<anonymous> (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4286:99)
+    at Function.getChildList (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4372:22)
+    at _callee5$ (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/services/taskService.js:79:33)
+    at tryCatch (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:62:40)
+    at Generator.invoke [as _invoke] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:296:22)
+    at Generator.prototype.(anonymous function) [as next] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:114:21)
+    at step (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:3928:191)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:3928:361
+    at process._tickCallback (internal/process/next_tick.js:68:7),
+  _ended: false,
+  _timeout: undefined,
+  _idleNext: null,
+  _idlePrev: null,
+  _idleStart: null,
+  _idleTimeout: -1,
+  _repeat: null,
+  sql: 'select * from sp_task_organization where parent_id > 0',
+  values: undefined,
+  typeCast: true,
+  nestTables: false,
+  _resultSet: null,
+  _results: [],
+  _fields: [],
+  _index: 0,
+  _loadError: null }
+[2018-08-17T16:14:16.389] [INFO] ./logs/sponge-city-2018-08-16.log - sql-format => select * from sp_task_organization where parent_id=0
+[2018-08-17T16:14:16.390] [INFO] ./logs/sponge-city-2018-08-16.log - sql => select * from sp_task_organization where parent_id=0
+[2018-08-17T16:14:16.400] [INFO] ./logs/sponge-city-2018-08-16.log - query => Query {
+  _events: {},
+  _eventsCount: 0,
+  _maxListeners: undefined,
+  _callback: [Function],
+  _callSite: Error
+    at Pool.query (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/mysql/lib/Pool.js:199:23)
+    at CommonDao._query (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/commonDao.js:89:24)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/commonDao.js:70:12
+    at new Promise (<anonymous>)
+    at CommonDao.select (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/commonDao.js:69:12)
+    at Function._callee$ (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/taskDao.js:13:38)
+    at tryCatch (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:62:40)
+    at Generator.invoke [as _invoke] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:296:22)
+    at Generator.prototype.(anonymous function) [as next] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:114:21)
+    at step (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4286:191)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4286:437
+    at new Promise (<anonymous>)
+    at Function.<anonymous> (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4286:99)
+    at Function.getOrganizationList (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4332:21)
+    at _callee5$ (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/services/taskService.js:78:32)
+    at tryCatch (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:62:40)
+    at Generator.invoke [as _invoke] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:296:22)
+    at Generator.prototype.(anonymous function) [as next] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:114:21)
+    at step (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:3928:191)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:3928:437
+    at new Promise (<anonymous>)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:3928:99,
+  _ended: false,
+  _timeout: undefined,
+  _idleNext: null,
+  _idlePrev: null,
+  _idleStart: null,
+  _idleTimeout: -1,
+  _repeat: null,
+  sql: 'select * from sp_task_organization where parent_id=0',
+  values: undefined,
+  typeCast: true,
+  nestTables: false,
+  _resultSet: null,
+  _results: [],
+  _fields: [],
+  _index: 0,
+  _loadError: null }
+[2018-08-17T16:14:16.425] [INFO] ./logs/sponge-city-2018-08-16.log - sql-format => select * from sp_task_organization where parent_id > 0
+[2018-08-17T16:14:16.425] [INFO] ./logs/sponge-city-2018-08-16.log - sql => select * from sp_task_organization where parent_id > 0
+[2018-08-17T16:14:16.426] [INFO] ./logs/sponge-city-2018-08-16.log - query => Query {
+  _events: {},
+  _eventsCount: 0,
+  _maxListeners: undefined,
+  _callback: [Function],
+  _callSite: Error
+    at Pool.query (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/mysql/lib/Pool.js:199:23)
+    at CommonDao._query (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/commonDao.js:89:24)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/commonDao.js:70:12
+    at new Promise (<anonymous>)
+    at CommonDao.select (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/commonDao.js:69:12)
+    at Function._callee2$ (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/taskDao.js:23:38)
+    at tryCatch (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:62:40)
+    at Generator.invoke [as _invoke] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:296:22)
+    at Generator.prototype.(anonymous function) [as next] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:114:21)
+    at step (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4286:191)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4286:437
+    at new Promise (<anonymous>)
+    at Function.<anonymous> (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4286:99)
+    at Function.getChildList (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4372:22)
+    at _callee5$ (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/services/taskService.js:79:33)
+    at tryCatch (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:62:40)
+    at Generator.invoke [as _invoke] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:296:22)
+    at Generator.prototype.(anonymous function) [as next] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:114:21)
+    at step (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:3928:191)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:3928:361
+    at process._tickCallback (internal/process/next_tick.js:68:7),
+  _ended: false,
+  _timeout: undefined,
+  _idleNext: null,
+  _idlePrev: null,
+  _idleStart: null,
+  _idleTimeout: -1,
+  _repeat: null,
+  sql: 'select * from sp_task_organization where parent_id > 0',
+  values: undefined,
+  typeCast: true,
+  nestTables: false,
+  _resultSet: null,
+  _results: [],
+  _fields: [],
+  _index: 0,
+  _loadError: null }
+[2018-08-17T16:14:27.643] [INFO] ./logs/sponge-city-2018-08-16.log - sql-format => select * from sp_task_organization where parent_id=0
+[2018-08-17T16:14:27.643] [INFO] ./logs/sponge-city-2018-08-16.log - sql => select * from sp_task_organization where parent_id=0
+[2018-08-17T16:14:27.644] [INFO] ./logs/sponge-city-2018-08-16.log - query => Query {
+  _events: {},
+  _eventsCount: 0,
+  _maxListeners: undefined,
+  _callback: [Function],
+  _callSite: Error
+    at Pool.query (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/mysql/lib/Pool.js:199:23)
+    at CommonDao._query (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/commonDao.js:89:24)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/commonDao.js:70:12
+    at new Promise (<anonymous>)
+    at CommonDao.select (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/commonDao.js:69:12)
+    at Function._callee$ (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/taskDao.js:13:38)
+    at tryCatch (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:62:40)
+    at Generator.invoke [as _invoke] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:296:22)
+    at Generator.prototype.(anonymous function) [as next] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:114:21)
+    at step (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4286:191)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4286:437
+    at new Promise (<anonymous>)
+    at Function.<anonymous> (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4286:99)
+    at Function.getOrganizationList (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4332:21)
+    at _callee5$ (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/services/taskService.js:78:32)
+    at tryCatch (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:62:40)
+    at Generator.invoke [as _invoke] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:296:22)
+    at Generator.prototype.(anonymous function) [as next] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:114:21)
+    at step (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:3928:191)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:3928:437
+    at new Promise (<anonymous>)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:3928:99,
+  _ended: false,
+  _timeout: undefined,
+  _idleNext: null,
+  _idlePrev: null,
+  _idleStart: null,
+  _idleTimeout: -1,
+  _repeat: null,
+  sql: 'select * from sp_task_organization where parent_id=0',
+  values: undefined,
+  typeCast: true,
+  nestTables: false,
+  _resultSet: null,
+  _results: [],
+  _fields: [],
+  _index: 0,
+  _loadError: null }
+[2018-08-17T16:14:27.651] [INFO] ./logs/sponge-city-2018-08-16.log - sql-format => select * from sp_task_organization where parent_id > 0
+[2018-08-17T16:14:27.652] [INFO] ./logs/sponge-city-2018-08-16.log - sql => select * from sp_task_organization where parent_id > 0
+[2018-08-17T16:14:27.652] [INFO] ./logs/sponge-city-2018-08-16.log - query => Query {
+  _events: {},
+  _eventsCount: 0,
+  _maxListeners: undefined,
+  _callback: [Function],
+  _callSite: Error
+    at Pool.query (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/mysql/lib/Pool.js:199:23)
+    at CommonDao._query (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/commonDao.js:89:24)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/commonDao.js:70:12
+    at new Promise (<anonymous>)
+    at CommonDao.select (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/commonDao.js:69:12)
+    at Function._callee2$ (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/taskDao.js:23:38)
+    at tryCatch (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:62:40)
+    at Generator.invoke [as _invoke] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:296:22)
+    at Generator.prototype.(anonymous function) [as next] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:114:21)
+    at step (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4286:191)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4286:437
+    at new Promise (<anonymous>)
+    at Function.<anonymous> (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4286:99)
+    at Function.getChildList (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4372:22)
+    at _callee5$ (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/services/taskService.js:79:33)
+    at tryCatch (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:62:40)
+    at Generator.invoke [as _invoke] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:296:22)
+    at Generator.prototype.(anonymous function) [as next] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:114:21)
+    at step (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:3928:191)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:3928:361
+    at process._tickCallback (internal/process/next_tick.js:68:7),
+  _ended: false,
+  _timeout: undefined,
+  _idleNext: null,
+  _idlePrev: null,
+  _idleStart: null,
+  _idleTimeout: -1,
+  _repeat: null,
+  sql: 'select * from sp_task_organization where parent_id > 0',
+  values: undefined,
+  typeCast: true,
+  nestTables: false,
+  _resultSet: null,
+  _results: [],
+  _fields: [],
+  _index: 0,
+  _loadError: null }
+[2018-08-17T16:16:05.340] [INFO] ./logs/sponge-city-2018-08-16.log - sql-format => select * from sp_task_organization where parent_id=0
+[2018-08-17T16:16:05.341] [INFO] ./logs/sponge-city-2018-08-16.log - sql => select * from sp_task_organization where parent_id=0
+[2018-08-17T16:16:05.341] [INFO] ./logs/sponge-city-2018-08-16.log - query => Query {
+  _events: {},
+  _eventsCount: 0,
+  _maxListeners: undefined,
+  _callback: [Function],
+  _callSite: Error
+    at Pool.query (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/mysql/lib/Pool.js:199:23)
+    at CommonDao._query (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/commonDao.js:89:24)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/commonDao.js:70:12
+    at new Promise (<anonymous>)
+    at CommonDao.select (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/commonDao.js:69:12)
+    at Function._callee$ (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/taskDao.js:13:38)
+    at tryCatch (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:62:40)
+    at Generator.invoke [as _invoke] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:296:22)
+    at Generator.prototype.(anonymous function) [as next] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:114:21)
+    at step (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4286:191)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4286:437
+    at new Promise (<anonymous>)
+    at Function.<anonymous> (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4286:99)
+    at Function.getOrganizationList (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4332:21)
+    at _callee5$ (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/services/taskService.js:78:32)
+    at tryCatch (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:62:40)
+    at Generator.invoke [as _invoke] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:296:22)
+    at Generator.prototype.(anonymous function) [as next] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:114:21)
+    at step (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:3928:191)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:3928:437
+    at new Promise (<anonymous>)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:3928:99,
+  _ended: false,
+  _timeout: undefined,
+  _idleNext: null,
+  _idlePrev: null,
+  _idleStart: null,
+  _idleTimeout: -1,
+  _repeat: null,
+  sql: 'select * from sp_task_organization where parent_id=0',
+  values: undefined,
+  typeCast: true,
+  nestTables: false,
+  _resultSet: null,
+  _results: [],
+  _fields: [],
+  _index: 0,
+  _loadError: null }
+[2018-08-17T16:16:05.348] [INFO] ./logs/sponge-city-2018-08-16.log - sql-format => select * from sp_task_organization where parent_id > 0
+[2018-08-17T16:16:05.349] [INFO] ./logs/sponge-city-2018-08-16.log - sql => select * from sp_task_organization where parent_id > 0
+[2018-08-17T16:16:05.349] [INFO] ./logs/sponge-city-2018-08-16.log - query => Query {
+  _events: {},
+  _eventsCount: 0,
+  _maxListeners: undefined,
+  _callback: [Function],
+  _callSite: Error
+    at Pool.query (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/mysql/lib/Pool.js:199:23)
+    at CommonDao._query (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/commonDao.js:89:24)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/commonDao.js:70:12
+    at new Promise (<anonymous>)
+    at CommonDao.select (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/commonDao.js:69:12)
+    at Function._callee2$ (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/taskDao.js:23:38)
+    at tryCatch (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:62:40)
+    at Generator.invoke [as _invoke] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:296:22)
+    at Generator.prototype.(anonymous function) [as next] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:114:21)
+    at step (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4286:191)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4286:437
+    at new Promise (<anonymous>)
+    at Function.<anonymous> (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4286:99)
+    at Function.getChildList (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4372:22)
+    at _callee5$ (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/services/taskService.js:79:33)
+    at tryCatch (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:62:40)
+    at Generator.invoke [as _invoke] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:296:22)
+    at Generator.prototype.(anonymous function) [as next] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:114:21)
+    at step (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:3928:191)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:3928:361
+    at process._tickCallback (internal/process/next_tick.js:68:7),
+  _ended: false,
+  _timeout: undefined,
+  _idleNext: null,
+  _idlePrev: null,
+  _idleStart: null,
+  _idleTimeout: -1,
+  _repeat: null,
+  sql: 'select * from sp_task_organization where parent_id > 0',
+  values: undefined,
+  typeCast: true,
+  nestTables: false,
+  _resultSet: null,
+  _results: [],
+  _fields: [],
+  _index: 0,
+  _loadError: null }
+[2018-08-17T16:16:13.242] [INFO] ./logs/sponge-city-2018-08-16.log - sql-format => select * from sp_task_organization where parent_id=0
+[2018-08-17T16:16:13.242] [INFO] ./logs/sponge-city-2018-08-16.log - sql => select * from sp_task_organization where parent_id=0
+[2018-08-17T16:16:13.242] [INFO] ./logs/sponge-city-2018-08-16.log - query => Query {
+  _events: {},
+  _eventsCount: 0,
+  _maxListeners: undefined,
+  _callback: [Function],
+  _callSite: Error
+    at Pool.query (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/mysql/lib/Pool.js:199:23)
+    at CommonDao._query (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/commonDao.js:89:24)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/commonDao.js:70:12
+    at new Promise (<anonymous>)
+    at CommonDao.select (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/commonDao.js:69:12)
+    at Function._callee$ (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/taskDao.js:13:38)
+    at tryCatch (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:62:40)
+    at Generator.invoke [as _invoke] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:296:22)
+    at Generator.prototype.(anonymous function) [as next] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:114:21)
+    at step (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4286:191)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4286:437
+    at new Promise (<anonymous>)
+    at Function.<anonymous> (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4286:99)
+    at Function.getOrganizationList (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4332:21)
+    at _callee5$ (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/services/taskService.js:78:32)
+    at tryCatch (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:62:40)
+    at Generator.invoke [as _invoke] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:296:22)
+    at Generator.prototype.(anonymous function) [as next] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:114:21)
+    at step (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:3928:191)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:3928:437
+    at new Promise (<anonymous>)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:3928:99,
+  _ended: false,
+  _timeout: undefined,
+  _idleNext: null,
+  _idlePrev: null,
+  _idleStart: null,
+  _idleTimeout: -1,
+  _repeat: null,
+  sql: 'select * from sp_task_organization where parent_id=0',
+  values: undefined,
+  typeCast: true,
+  nestTables: false,
+  _resultSet: null,
+  _results: [],
+  _fields: [],
+  _index: 0,
+  _loadError: null }
+[2018-08-17T16:16:13.250] [INFO] ./logs/sponge-city-2018-08-16.log - sql-format => select * from sp_task_organization where parent_id > 0
+[2018-08-17T16:16:13.250] [INFO] ./logs/sponge-city-2018-08-16.log - sql => select * from sp_task_organization where parent_id > 0
+[2018-08-17T16:16:13.250] [INFO] ./logs/sponge-city-2018-08-16.log - query => Query {
+  _events: {},
+  _eventsCount: 0,
+  _maxListeners: undefined,
+  _callback: [Function],
+  _callSite: Error
+    at Pool.query (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/mysql/lib/Pool.js:199:23)
+    at CommonDao._query (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/commonDao.js:89:24)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/commonDao.js:70:12
+    at new Promise (<anonymous>)
+    at CommonDao.select (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/commonDao.js:69:12)
+    at Function._callee2$ (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/taskDao.js:23:38)
+    at tryCatch (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:62:40)
+    at Generator.invoke [as _invoke] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:296:22)
+    at Generator.prototype.(anonymous function) [as next] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:114:21)
+    at step (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4286:191)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4286:437
+    at new Promise (<anonymous>)
+    at Function.<anonymous> (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4286:99)
+    at Function.getChildList (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4372:22)
+    at _callee5$ (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/services/taskService.js:79:33)
+    at tryCatch (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:62:40)
+    at Generator.invoke [as _invoke] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:296:22)
+    at Generator.prototype.(anonymous function) [as next] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:114:21)
+    at step (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:3928:191)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:3928:361
+    at process._tickCallback (internal/process/next_tick.js:68:7),
+  _ended: false,
+  _timeout: undefined,
+  _idleNext: null,
+  _idlePrev: null,
+  _idleStart: null,
+  _idleTimeout: -1,
+  _repeat: null,
+  sql: 'select * from sp_task_organization where parent_id > 0',
+  values: undefined,
+  typeCast: true,
+  nestTables: false,
+  _resultSet: null,
+  _results: [],
+  _fields: [],
+  _index: 0,
+  _loadError: null }
+[2018-08-17T16:18:24.955] [INFO] ./logs/sponge-city-2018-08-16.log - sql-format => select * from sp_task_organization where parent_id=0
+[2018-08-17T16:18:24.956] [INFO] ./logs/sponge-city-2018-08-16.log - sql => select * from sp_task_organization where parent_id=0
+[2018-08-17T16:18:24.958] [INFO] ./logs/sponge-city-2018-08-16.log - query => Query {
+  _events: {},
+  _eventsCount: 0,
+  _maxListeners: undefined,
+  _callback: [Function],
+  _callSite: Error
+    at Pool.query (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/mysql/lib/Pool.js:199:23)
+    at CommonDao._query (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/commonDao.js:89:24)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/commonDao.js:70:12
+    at new Promise (<anonymous>)
+    at CommonDao.select (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/commonDao.js:69:12)
+    at Function._callee$ (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/taskDao.js:13:38)
+    at tryCatch (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:62:40)
+    at Generator.invoke [as _invoke] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:296:22)
+    at Generator.prototype.(anonymous function) [as next] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:114:21)
+    at step (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4286:191)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4286:437
+    at new Promise (<anonymous>)
+    at Function.<anonymous> (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4286:99)
+    at Function.getOrganizationList (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4332:21)
+    at _callee5$ (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/services/taskService.js:78:32)
+    at tryCatch (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:62:40)
+    at Generator.invoke [as _invoke] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:296:22)
+    at Generator.prototype.(anonymous function) [as next] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:114:21)
+    at step (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:3928:191)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:3928:437
+    at new Promise (<anonymous>)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:3928:99,
+  _ended: false,
+  _timeout: undefined,
+  _idleNext: null,
+  _idlePrev: null,
+  _idleStart: null,
+  _idleTimeout: -1,
+  _repeat: null,
+  sql: 'select * from sp_task_organization where parent_id=0',
+  values: undefined,
+  typeCast: true,
+  nestTables: false,
+  _resultSet: null,
+  _results: [],
+  _fields: [],
+  _index: 0,
+  _loadError: null }
+[2018-08-17T16:18:24.973] [INFO] ./logs/sponge-city-2018-08-16.log - sql-format => select * from sp_task_organization where parent_id > 0
+[2018-08-17T16:18:24.974] [INFO] ./logs/sponge-city-2018-08-16.log - sql => select * from sp_task_organization where parent_id > 0
+[2018-08-17T16:18:24.974] [INFO] ./logs/sponge-city-2018-08-16.log - query => Query {
+  _events: {},
+  _eventsCount: 0,
+  _maxListeners: undefined,
+  _callback: [Function],
+  _callSite: Error
+    at Pool.query (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/mysql/lib/Pool.js:199:23)
+    at CommonDao._query (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/commonDao.js:89:24)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/commonDao.js:70:12
+    at new Promise (<anonymous>)
+    at CommonDao.select (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/commonDao.js:69:12)
+    at Function._callee2$ (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/taskDao.js:23:38)
+    at tryCatch (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:62:40)
+    at Generator.invoke [as _invoke] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:296:22)
+    at Generator.prototype.(anonymous function) [as next] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:114:21)
+    at step (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4286:191)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4286:437
+    at new Promise (<anonymous>)
+    at Function.<anonymous> (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4286:99)
+    at Function.getChildList (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4372:22)
+    at _callee5$ (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/services/taskService.js:79:33)
+    at tryCatch (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:62:40)
+    at Generator.invoke [as _invoke] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:296:22)
+    at Generator.prototype.(anonymous function) [as next] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:114:21)
+    at step (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:3928:191)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:3928:361
+    at process._tickCallback (internal/process/next_tick.js:68:7),
+  _ended: false,
+  _timeout: undefined,
+  _idleNext: null,
+  _idlePrev: null,
+  _idleStart: null,
+  _idleTimeout: -1,
+  _repeat: null,
+  sql: 'select * from sp_task_organization where parent_id > 0',
+  values: undefined,
+  typeCast: true,
+  nestTables: false,
+  _resultSet: null,
+  _results: [],
+  _fields: [],
+  _index: 0,
+  _loadError: null }
+[2018-08-17T16:18:30.579] [INFO] ./logs/sponge-city-2018-08-16.log - sql-format => select * from sp_task_organization where parent_id=0
+[2018-08-17T16:18:30.579] [INFO] ./logs/sponge-city-2018-08-16.log - sql => select * from sp_task_organization where parent_id=0
+[2018-08-17T16:18:30.579] [INFO] ./logs/sponge-city-2018-08-16.log - query => Query {
+  _events: {},
+  _eventsCount: 0,
+  _maxListeners: undefined,
+  _callback: [Function],
+  _callSite: Error
+    at Pool.query (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/mysql/lib/Pool.js:199:23)
+    at CommonDao._query (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/commonDao.js:89:24)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/commonDao.js:70:12
+    at new Promise (<anonymous>)
+    at CommonDao.select (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/commonDao.js:69:12)
+    at Function._callee$ (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/taskDao.js:13:38)
+    at tryCatch (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:62:40)
+    at Generator.invoke [as _invoke] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:296:22)
+    at Generator.prototype.(anonymous function) [as next] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:114:21)
+    at step (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4286:191)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4286:437
+    at new Promise (<anonymous>)
+    at Function.<anonymous> (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4286:99)
+    at Function.getOrganizationList (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4332:21)
+    at _callee5$ (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/services/taskService.js:78:32)
+    at tryCatch (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:62:40)
+    at Generator.invoke [as _invoke] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:296:22)
+    at Generator.prototype.(anonymous function) [as next] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:114:21)
+    at step (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:3928:191)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:3928:437
+    at new Promise (<anonymous>)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:3928:99,
+  _ended: false,
+  _timeout: undefined,
+  _idleNext: null,
+  _idlePrev: null,
+  _idleStart: null,
+  _idleTimeout: -1,
+  _repeat: null,
+  sql: 'select * from sp_task_organization where parent_id=0',
+  values: undefined,
+  typeCast: true,
+  nestTables: false,
+  _resultSet: null,
+  _results: [],
+  _fields: [],
+  _index: 0,
+  _loadError: null }
+[2018-08-17T16:18:30.592] [INFO] ./logs/sponge-city-2018-08-16.log - sql-format => select * from sp_task_organization where parent_id > 0
+[2018-08-17T16:18:30.592] [INFO] ./logs/sponge-city-2018-08-16.log - sql => select * from sp_task_organization where parent_id > 0
+[2018-08-17T16:18:30.592] [INFO] ./logs/sponge-city-2018-08-16.log - query => Query {
+  _events: {},
+  _eventsCount: 0,
+  _maxListeners: undefined,
+  _callback: [Function],
+  _callSite: Error
+    at Pool.query (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/mysql/lib/Pool.js:199:23)
+    at CommonDao._query (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/commonDao.js:89:24)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/commonDao.js:70:12
+    at new Promise (<anonymous>)
+    at CommonDao.select (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/commonDao.js:69:12)
+    at Function._callee2$ (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/taskDao.js:23:38)
+    at tryCatch (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:62:40)
+    at Generator.invoke [as _invoke] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:296:22)
+    at Generator.prototype.(anonymous function) [as next] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:114:21)
+    at step (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4286:191)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4286:437
+    at new Promise (<anonymous>)
+    at Function.<anonymous> (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4286:99)
+    at Function.getChildList (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4372:22)
+    at _callee5$ (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/services/taskService.js:79:33)
+    at tryCatch (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:62:40)
+    at Generator.invoke [as _invoke] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:296:22)
+    at Generator.prototype.(anonymous function) [as next] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:114:21)
+    at step (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:3928:191)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:3928:361
+    at process._tickCallback (internal/process/next_tick.js:68:7),
+  _ended: false,
+  _timeout: undefined,
+  _idleNext: null,
+  _idlePrev: null,
+  _idleStart: null,
+  _idleTimeout: -1,
+  _repeat: null,
+  sql: 'select * from sp_task_organization where parent_id > 0',
+  values: undefined,
+  typeCast: true,
+  nestTables: false,
+  _resultSet: null,
+  _results: [],
+  _fields: [],
+  _index: 0,
+  _loadError: null }
+[2018-08-17T16:19:43.618] [INFO] ./logs/sponge-city-2018-08-16.log - sql-format => select * from sp_task_organization where parent_id=0
+[2018-08-17T16:19:43.618] [INFO] ./logs/sponge-city-2018-08-16.log - sql => select * from sp_task_organization where parent_id=0
+[2018-08-17T16:19:43.619] [INFO] ./logs/sponge-city-2018-08-16.log - query => Query {
+  _events: {},
+  _eventsCount: 0,
+  _maxListeners: undefined,
+  _callback: [Function],
+  _callSite: Error
+    at Pool.query (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/mysql/lib/Pool.js:199:23)
+    at CommonDao._query (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/commonDao.js:89:24)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/commonDao.js:70:12
+    at new Promise (<anonymous>)
+    at CommonDao.select (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/commonDao.js:69:12)
+    at Function._callee$ (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/taskDao.js:13:38)
+    at tryCatch (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:62:40)
+    at Generator.invoke [as _invoke] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:296:22)
+    at Generator.prototype.(anonymous function) [as next] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:114:21)
+    at step (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4286:191)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4286:437
+    at new Promise (<anonymous>)
+    at Function.<anonymous> (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4286:99)
+    at Function.getOrganizationList (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4332:21)
+    at _callee5$ (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/services/taskService.js:78:32)
+    at tryCatch (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:62:40)
+    at Generator.invoke [as _invoke] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:296:22)
+    at Generator.prototype.(anonymous function) [as next] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:114:21)
+    at step (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:3928:191)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:3928:437
+    at new Promise (<anonymous>)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:3928:99,
+  _ended: false,
+  _timeout: undefined,
+  _idleNext: null,
+  _idlePrev: null,
+  _idleStart: null,
+  _idleTimeout: -1,
+  _repeat: null,
+  sql: 'select * from sp_task_organization where parent_id=0',
+  values: undefined,
+  typeCast: true,
+  nestTables: false,
+  _resultSet: null,
+  _results: [],
+  _fields: [],
+  _index: 0,
+  _loadError: null }
+[2018-08-17T16:19:43.632] [INFO] ./logs/sponge-city-2018-08-16.log - sql-format => select * from sp_task_organization where parent_id > 0
+[2018-08-17T16:19:43.632] [INFO] ./logs/sponge-city-2018-08-16.log - sql => select * from sp_task_organization where parent_id > 0
+[2018-08-17T16:19:43.632] [INFO] ./logs/sponge-city-2018-08-16.log - query => Query {
+  _events: {},
+  _eventsCount: 0,
+  _maxListeners: undefined,
+  _callback: [Function],
+  _callSite: Error
+    at Pool.query (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/mysql/lib/Pool.js:199:23)
+    at CommonDao._query (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/commonDao.js:89:24)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/commonDao.js:70:12
+    at new Promise (<anonymous>)
+    at CommonDao.select (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/commonDao.js:69:12)
+    at Function._callee2$ (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/taskDao.js:23:38)
+    at tryCatch (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:62:40)
+    at Generator.invoke [as _invoke] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:296:22)
+    at Generator.prototype.(anonymous function) [as next] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:114:21)
+    at step (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4286:191)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4286:437
+    at new Promise (<anonymous>)
+    at Function.<anonymous> (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4286:99)
+    at Function.getChildList (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4372:22)
+    at _callee5$ (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/services/taskService.js:79:33)
+    at tryCatch (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:62:40)
+    at Generator.invoke [as _invoke] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:296:22)
+    at Generator.prototype.(anonymous function) [as next] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:114:21)
+    at step (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:3928:191)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:3928:361
+    at process._tickCallback (internal/process/next_tick.js:68:7),
+  _ended: false,
+  _timeout: undefined,
+  _idleNext: null,
+  _idlePrev: null,
+  _idleStart: null,
+  _idleTimeout: -1,
+  _repeat: null,
+  sql: 'select * from sp_task_organization where parent_id > 0',
+  values: undefined,
+  typeCast: true,
+  nestTables: false,
+  _resultSet: null,
+  _results: [],
+  _fields: [],
+  _index: 0,
+  _loadError: null }
+[2018-08-17T16:19:46.557] [INFO] ./logs/sponge-city-2018-08-16.log - sql-format => select * from sp_task_organization where parent_id=0
+[2018-08-17T16:19:46.558] [INFO] ./logs/sponge-city-2018-08-16.log - sql => select * from sp_task_organization where parent_id=0
+[2018-08-17T16:19:46.558] [INFO] ./logs/sponge-city-2018-08-16.log - query => Query {
+  _events: {},
+  _eventsCount: 0,
+  _maxListeners: undefined,
+  _callback: [Function],
+  _callSite: Error
+    at Pool.query (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/mysql/lib/Pool.js:199:23)
+    at CommonDao._query (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/commonDao.js:89:24)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/commonDao.js:70:12
+    at new Promise (<anonymous>)
+    at CommonDao.select (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/commonDao.js:69:12)
+    at Function._callee$ (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/taskDao.js:13:38)
+    at tryCatch (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:62:40)
+    at Generator.invoke [as _invoke] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:296:22)
+    at Generator.prototype.(anonymous function) [as next] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:114:21)
+    at step (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4286:191)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4286:437
+    at new Promise (<anonymous>)
+    at Function.<anonymous> (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4286:99)
+    at Function.getOrganizationList (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4332:21)
+    at _callee5$ (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/services/taskService.js:78:32)
+    at tryCatch (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:62:40)
+    at Generator.invoke [as _invoke] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:296:22)
+    at Generator.prototype.(anonymous function) [as next] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:114:21)
+    at step (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:3928:191)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:3928:437
+    at new Promise (<anonymous>)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:3928:99,
+  _ended: false,
+  _timeout: undefined,
+  _idleNext: null,
+  _idlePrev: null,
+  _idleStart: null,
+  _idleTimeout: -1,
+  _repeat: null,
+  sql: 'select * from sp_task_organization where parent_id=0',
+  values: undefined,
+  typeCast: true,
+  nestTables: false,
+  _resultSet: null,
+  _results: [],
+  _fields: [],
+  _index: 0,
+  _loadError: null }
+[2018-08-17T16:19:46.563] [INFO] ./logs/sponge-city-2018-08-16.log - sql-format => select * from sp_task_organization where parent_id > 0
+[2018-08-17T16:19:46.563] [INFO] ./logs/sponge-city-2018-08-16.log - sql => select * from sp_task_organization where parent_id > 0
+[2018-08-17T16:19:46.563] [INFO] ./logs/sponge-city-2018-08-16.log - query => Query {
+  _events: {},
+  _eventsCount: 0,
+  _maxListeners: undefined,
+  _callback: [Function],
+  _callSite: Error
+    at Pool.query (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/mysql/lib/Pool.js:199:23)
+    at CommonDao._query (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/commonDao.js:89:24)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/commonDao.js:70:12
+    at new Promise (<anonymous>)
+    at CommonDao.select (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/commonDao.js:69:12)
+    at Function._callee2$ (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/taskDao.js:23:38)
+    at tryCatch (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:62:40)
+    at Generator.invoke [as _invoke] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:296:22)
+    at Generator.prototype.(anonymous function) [as next] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:114:21)
+    at step (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4286:191)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4286:437
+    at new Promise (<anonymous>)
+    at Function.<anonymous> (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4286:99)
+    at Function.getChildList (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4372:22)
+    at _callee5$ (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/services/taskService.js:79:33)
+    at tryCatch (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:62:40)
+    at Generator.invoke [as _invoke] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:296:22)
+    at Generator.prototype.(anonymous function) [as next] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:114:21)
+    at step (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:3928:191)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:3928:361
+    at process._tickCallback (internal/process/next_tick.js:68:7),
+  _ended: false,
+  _timeout: undefined,
+  _idleNext: null,
+  _idlePrev: null,
+  _idleStart: null,
+  _idleTimeout: -1,
+  _repeat: null,
+  sql: 'select * from sp_task_organization where parent_id > 0',
+  values: undefined,
+  typeCast: true,
+  nestTables: false,
+  _resultSet: null,
+  _results: [],
+  _fields: [],
+  _index: 0,
+  _loadError: null }
+[2018-08-17T16:20:02.817] [INFO] ./logs/sponge-city-2018-08-16.log - sql-format => select * from sp_task_organization where parent_id=0
+[2018-08-17T16:20:02.818] [INFO] ./logs/sponge-city-2018-08-16.log - sql => select * from sp_task_organization where parent_id=0
+[2018-08-17T16:20:02.818] [INFO] ./logs/sponge-city-2018-08-16.log - query => Query {
+  _events: {},
+  _eventsCount: 0,
+  _maxListeners: undefined,
+  _callback: [Function],
+  _callSite: Error
+    at Pool.query (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/mysql/lib/Pool.js:199:23)
+    at CommonDao._query (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/commonDao.js:89:24)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/commonDao.js:70:12
+    at new Promise (<anonymous>)
+    at CommonDao.select (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/commonDao.js:69:12)
+    at Function._callee$ (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/taskDao.js:13:38)
+    at tryCatch (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:62:40)
+    at Generator.invoke [as _invoke] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:296:22)
+    at Generator.prototype.(anonymous function) [as next] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:114:21)
+    at step (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4286:191)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4286:437
+    at new Promise (<anonymous>)
+    at Function.<anonymous> (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4286:99)
+    at Function.getOrganizationList (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4332:21)
+    at _callee5$ (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/services/taskService.js:78:32)
+    at tryCatch (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:62:40)
+    at Generator.invoke [as _invoke] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:296:22)
+    at Generator.prototype.(anonymous function) [as next] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:114:21)
+    at step (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:3928:191)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:3928:437
+    at new Promise (<anonymous>)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:3928:99,
+  _ended: false,
+  _timeout: undefined,
+  _idleNext: null,
+  _idlePrev: null,
+  _idleStart: null,
+  _idleTimeout: -1,
+  _repeat: null,
+  sql: 'select * from sp_task_organization where parent_id=0',
+  values: undefined,
+  typeCast: true,
+  nestTables: false,
+  _resultSet: null,
+  _results: [],
+  _fields: [],
+  _index: 0,
+  _loadError: null }
+[2018-08-17T16:20:02.824] [INFO] ./logs/sponge-city-2018-08-16.log - sql-format => select * from sp_task_organization where parent_id > 0
+[2018-08-17T16:20:02.827] [INFO] ./logs/sponge-city-2018-08-16.log - sql => select * from sp_task_organization where parent_id > 0
+[2018-08-17T16:20:02.828] [INFO] ./logs/sponge-city-2018-08-16.log - query => Query {
+  _events: {},
+  _eventsCount: 0,
+  _maxListeners: undefined,
+  _callback: [Function],
+  _callSite: Error
+    at Pool.query (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/mysql/lib/Pool.js:199:23)
+    at CommonDao._query (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/commonDao.js:89:24)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/commonDao.js:70:12
+    at new Promise (<anonymous>)
+    at CommonDao.select (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/commonDao.js:69:12)
+    at Function._callee2$ (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/taskDao.js:23:38)
+    at tryCatch (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:62:40)
+    at Generator.invoke [as _invoke] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:296:22)
+    at Generator.prototype.(anonymous function) [as next] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:114:21)
+    at step (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4286:191)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4286:437
+    at new Promise (<anonymous>)
+    at Function.<anonymous> (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4286:99)
+    at Function.getChildList (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4372:22)
+    at _callee5$ (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/services/taskService.js:79:33)
+    at tryCatch (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:62:40)
+    at Generator.invoke [as _invoke] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:296:22)
+    at Generator.prototype.(anonymous function) [as next] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:114:21)
+    at step (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:3928:191)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:3928:361
+    at process._tickCallback (internal/process/next_tick.js:68:7),
+  _ended: false,
+  _timeout: undefined,
+  _idleNext: null,
+  _idlePrev: null,
+  _idleStart: null,
+  _idleTimeout: -1,
+  _repeat: null,
+  sql: 'select * from sp_task_organization where parent_id > 0',
+  values: undefined,
+  typeCast: true,
+  nestTables: false,
+  _resultSet: null,
+  _results: [],
+  _fields: [],
+  _index: 0,
+  _loadError: null }
+[2018-08-17T16:20:06.131] [INFO] ./logs/sponge-city-2018-08-16.log - sql-format => select * from sp_task_organization where parent_id=0
+[2018-08-17T16:20:06.131] [INFO] ./logs/sponge-city-2018-08-16.log - sql => select * from sp_task_organization where parent_id=0
+[2018-08-17T16:20:06.131] [INFO] ./logs/sponge-city-2018-08-16.log - query => Query {
+  _events: {},
+  _eventsCount: 0,
+  _maxListeners: undefined,
+  _callback: [Function],
+  _callSite: Error
+    at Pool.query (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/mysql/lib/Pool.js:199:23)
+    at CommonDao._query (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/commonDao.js:89:24)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/commonDao.js:70:12
+    at new Promise (<anonymous>)
+    at CommonDao.select (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/commonDao.js:69:12)
+    at Function._callee$ (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/taskDao.js:13:38)
+    at tryCatch (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:62:40)
+    at Generator.invoke [as _invoke] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:296:22)
+    at Generator.prototype.(anonymous function) [as next] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:114:21)
+    at step (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4286:191)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4286:437
+    at new Promise (<anonymous>)
+    at Function.<anonymous> (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4286:99)
+    at Function.getOrganizationList (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4332:21)
+    at _callee5$ (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/services/taskService.js:78:32)
+    at tryCatch (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:62:40)
+    at Generator.invoke [as _invoke] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:296:22)
+    at Generator.prototype.(anonymous function) [as next] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:114:21)
+    at step (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:3928:191)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:3928:437
+    at new Promise (<anonymous>)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:3928:99,
+  _ended: false,
+  _timeout: undefined,
+  _idleNext: null,
+  _idlePrev: null,
+  _idleStart: null,
+  _idleTimeout: -1,
+  _repeat: null,
+  sql: 'select * from sp_task_organization where parent_id=0',
+  values: undefined,
+  typeCast: true,
+  nestTables: false,
+  _resultSet: null,
+  _results: [],
+  _fields: [],
+  _index: 0,
+  _loadError: null }
+[2018-08-17T16:20:06.137] [INFO] ./logs/sponge-city-2018-08-16.log - sql-format => select * from sp_task_organization where parent_id > 0
+[2018-08-17T16:20:06.138] [INFO] ./logs/sponge-city-2018-08-16.log - sql => select * from sp_task_organization where parent_id > 0
+[2018-08-17T16:20:06.138] [INFO] ./logs/sponge-city-2018-08-16.log - query => Query {
+  _events: {},
+  _eventsCount: 0,
+  _maxListeners: undefined,
+  _callback: [Function],
+  _callSite: Error
+    at Pool.query (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/mysql/lib/Pool.js:199:23)
+    at CommonDao._query (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/commonDao.js:89:24)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/commonDao.js:70:12
+    at new Promise (<anonymous>)
+    at CommonDao.select (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/commonDao.js:69:12)
+    at Function._callee2$ (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/taskDao.js:23:38)
+    at tryCatch (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:62:40)
+    at Generator.invoke [as _invoke] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:296:22)
+    at Generator.prototype.(anonymous function) [as next] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:114:21)
+    at step (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4286:191)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4286:437
+    at new Promise (<anonymous>)
+    at Function.<anonymous> (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4286:99)
+    at Function.getChildList (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4372:22)
+    at _callee5$ (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/services/taskService.js:79:33)
+    at tryCatch (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:62:40)
+    at Generator.invoke [as _invoke] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:296:22)
+    at Generator.prototype.(anonymous function) [as next] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:114:21)
+    at step (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:3928:191)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:3928:361
+    at process._tickCallback (internal/process/next_tick.js:68:7),
+  _ended: false,
+  _timeout: undefined,
+  _idleNext: null,
+  _idlePrev: null,
+  _idleStart: null,
+  _idleTimeout: -1,
+  _repeat: null,
+  sql: 'select * from sp_task_organization where parent_id > 0',
+  values: undefined,
+  typeCast: true,
+  nestTables: false,
+  _resultSet: null,
+  _results: [],
+  _fields: [],
+  _index: 0,
+  _loadError: null }
+[2018-08-17T16:20:26.198] [INFO] ./logs/sponge-city-2018-08-16.log - sql-format => select * from sp_task_organization where parent_id=0
+[2018-08-17T16:20:26.213] [INFO] ./logs/sponge-city-2018-08-16.log - sql => select * from sp_task_organization where parent_id=0
+[2018-08-17T16:20:26.214] [INFO] ./logs/sponge-city-2018-08-16.log - query => Query {
+  _events: {},
+  _eventsCount: 0,
+  _maxListeners: undefined,
+  _callback: [Function],
+  _callSite: Error
+    at Pool.query (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/mysql/lib/Pool.js:199:23)
+    at CommonDao._query (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/commonDao.js:89:24)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/commonDao.js:70:12
+    at new Promise (<anonymous>)
+    at CommonDao.select (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/commonDao.js:69:12)
+    at Function._callee$ (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/taskDao.js:13:38)
+    at tryCatch (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:62:40)
+    at Generator.invoke [as _invoke] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:296:22)
+    at Generator.prototype.(anonymous function) [as next] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:114:21)
+    at step (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4286:191)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4286:437
+    at new Promise (<anonymous>)
+    at Function.<anonymous> (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4286:99)
+    at Function.getOrganizationList (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4332:21)
+    at _callee5$ (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/services/taskService.js:78:32)
+    at tryCatch (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:62:40)
+    at Generator.invoke [as _invoke] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:296:22)
+    at Generator.prototype.(anonymous function) [as next] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:114:21)
+    at step (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:3928:191)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:3928:437
+    at new Promise (<anonymous>)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:3928:99,
+  _ended: false,
+  _timeout: undefined,
+  _idleNext: null,
+  _idlePrev: null,
+  _idleStart: null,
+  _idleTimeout: -1,
+  _repeat: null,
+  sql: 'select * from sp_task_organization where parent_id=0',
+  values: undefined,
+  typeCast: true,
+  nestTables: false,
+  _resultSet: null,
+  _results: [],
+  _fields: [],
+  _index: 0,
+  _loadError: null }
+[2018-08-17T16:20:26.246] [INFO] ./logs/sponge-city-2018-08-16.log - sql-format => select * from sp_task_organization where parent_id > 0
+[2018-08-17T16:20:26.246] [INFO] ./logs/sponge-city-2018-08-16.log - sql => select * from sp_task_organization where parent_id > 0
+[2018-08-17T16:20:26.246] [INFO] ./logs/sponge-city-2018-08-16.log - query => Query {
+  _events: {},
+  _eventsCount: 0,
+  _maxListeners: undefined,
+  _callback: [Function],
+  _callSite: Error
+    at Pool.query (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/mysql/lib/Pool.js:199:23)
+    at CommonDao._query (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/commonDao.js:89:24)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/commonDao.js:70:12
+    at new Promise (<anonymous>)
+    at CommonDao.select (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/commonDao.js:69:12)
+    at Function._callee2$ (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/taskDao.js:23:38)
+    at tryCatch (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:62:40)
+    at Generator.invoke [as _invoke] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:296:22)
+    at Generator.prototype.(anonymous function) [as next] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:114:21)
+    at step (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4286:191)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4286:437
+    at new Promise (<anonymous>)
+    at Function.<anonymous> (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4286:99)
+    at Function.getChildList (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4372:22)
+    at _callee5$ (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/services/taskService.js:79:33)
+    at tryCatch (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:62:40)
+    at Generator.invoke [as _invoke] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:296:22)
+    at Generator.prototype.(anonymous function) [as next] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:114:21)
+    at step (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:3928:191)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:3928:361
+    at process._tickCallback (internal/process/next_tick.js:68:7),
+  _ended: false,
+  _timeout: undefined,
+  _idleNext: null,
+  _idlePrev: null,
+  _idleStart: null,
+  _idleTimeout: -1,
+  _repeat: null,
+  sql: 'select * from sp_task_organization where parent_id > 0',
+  values: undefined,
+  typeCast: true,
+  nestTables: false,
+  _resultSet: null,
+  _results: [],
+  _fields: [],
+  _index: 0,
+  _loadError: null }
+[2018-08-17T16:21:04.833] [INFO] ./logs/sponge-city-2018-08-16.log - sql-format => select * from sp_task_organization where parent_id=0
+[2018-08-17T16:21:04.833] [INFO] ./logs/sponge-city-2018-08-16.log - sql => select * from sp_task_organization where parent_id=0
+[2018-08-17T16:21:04.834] [INFO] ./logs/sponge-city-2018-08-16.log - query => Query {
+  _events: {},
+  _eventsCount: 0,
+  _maxListeners: undefined,
+  _callback: [Function],
+  _callSite: Error
+    at Pool.query (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/mysql/lib/Pool.js:199:23)
+    at CommonDao._query (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/commonDao.js:89:24)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/commonDao.js:70:12
+    at new Promise (<anonymous>)
+    at CommonDao.select (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/commonDao.js:69:12)
+    at Function._callee$ (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/taskDao.js:13:38)
+    at tryCatch (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:62:40)
+    at Generator.invoke [as _invoke] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:296:22)
+    at Generator.prototype.(anonymous function) [as next] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:114:21)
+    at step (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4286:191)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4286:437
+    at new Promise (<anonymous>)
+    at Function.<anonymous> (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4286:99)
+    at Function.getOrganizationList (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4332:21)
+    at _callee5$ (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/services/taskService.js:78:32)
+    at tryCatch (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:62:40)
+    at Generator.invoke [as _invoke] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:296:22)
+    at Generator.prototype.(anonymous function) [as next] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:114:21)
+    at step (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:3928:191)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:3928:437
+    at new Promise (<anonymous>)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:3928:99,
+  _ended: false,
+  _timeout: undefined,
+  _idleNext: null,
+  _idlePrev: null,
+  _idleStart: null,
+  _idleTimeout: -1,
+  _repeat: null,
+  sql: 'select * from sp_task_organization where parent_id=0',
+  values: undefined,
+  typeCast: true,
+  nestTables: false,
+  _resultSet: null,
+  _results: [],
+  _fields: [],
+  _index: 0,
+  _loadError: null }
+[2018-08-17T16:21:04.840] [INFO] ./logs/sponge-city-2018-08-16.log - sql-format => select * from sp_task_organization where parent_id > 0
+[2018-08-17T16:21:04.840] [INFO] ./logs/sponge-city-2018-08-16.log - sql => select * from sp_task_organization where parent_id > 0
+[2018-08-17T16:21:04.840] [INFO] ./logs/sponge-city-2018-08-16.log - query => Query {
+  _events: {},
+  _eventsCount: 0,
+  _maxListeners: undefined,
+  _callback: [Function],
+  _callSite: Error
+    at Pool.query (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/mysql/lib/Pool.js:199:23)
+    at CommonDao._query (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/commonDao.js:89:24)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/commonDao.js:70:12
+    at new Promise (<anonymous>)
+    at CommonDao.select (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/commonDao.js:69:12)
+    at Function._callee2$ (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/taskDao.js:23:38)
+    at tryCatch (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:62:40)
+    at Generator.invoke [as _invoke] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:296:22)
+    at Generator.prototype.(anonymous function) [as next] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:114:21)
+    at step (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4286:191)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4286:437
+    at new Promise (<anonymous>)
+    at Function.<anonymous> (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4286:99)
+    at Function.getChildList (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4372:22)
+    at _callee5$ (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/services/taskService.js:79:33)
+    at tryCatch (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:62:40)
+    at Generator.invoke [as _invoke] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:296:22)
+    at Generator.prototype.(anonymous function) [as next] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:114:21)
+    at step (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:3928:191)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:3928:361
+    at process._tickCallback (internal/process/next_tick.js:68:7),
+  _ended: false,
+  _timeout: undefined,
+  _idleNext: null,
+  _idlePrev: null,
+  _idleStart: null,
+  _idleTimeout: -1,
+  _repeat: null,
+  sql: 'select * from sp_task_organization where parent_id > 0',
+  values: undefined,
+  typeCast: true,
+  nestTables: false,
+  _resultSet: null,
+  _results: [],
+  _fields: [],
+  _index: 0,
+  _loadError: null }
+[2018-08-17T16:21:07.672] [INFO] ./logs/sponge-city-2018-08-16.log - sql-format => select * from sp_task_organization where parent_id=0
+[2018-08-17T16:21:07.672] [INFO] ./logs/sponge-city-2018-08-16.log - sql => select * from sp_task_organization where parent_id=0
+[2018-08-17T16:21:07.672] [INFO] ./logs/sponge-city-2018-08-16.log - query => Query {
+  _events: {},
+  _eventsCount: 0,
+  _maxListeners: undefined,
+  _callback: [Function],
+  _callSite: Error
+    at Pool.query (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/mysql/lib/Pool.js:199:23)
+    at CommonDao._query (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/commonDao.js:89:24)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/commonDao.js:70:12
+    at new Promise (<anonymous>)
+    at CommonDao.select (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/commonDao.js:69:12)
+    at Function._callee$ (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/taskDao.js:13:38)
+    at tryCatch (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:62:40)
+    at Generator.invoke [as _invoke] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:296:22)
+    at Generator.prototype.(anonymous function) [as next] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:114:21)
+    at step (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4286:191)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4286:437
+    at new Promise (<anonymous>)
+    at Function.<anonymous> (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4286:99)
+    at Function.getOrganizationList (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4332:21)
+    at _callee5$ (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/services/taskService.js:78:32)
+    at tryCatch (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:62:40)
+    at Generator.invoke [as _invoke] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:296:22)
+    at Generator.prototype.(anonymous function) [as next] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:114:21)
+    at step (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:3928:191)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:3928:437
+    at new Promise (<anonymous>)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:3928:99,
+  _ended: false,
+  _timeout: undefined,
+  _idleNext: null,
+  _idlePrev: null,
+  _idleStart: null,
+  _idleTimeout: -1,
+  _repeat: null,
+  sql: 'select * from sp_task_organization where parent_id=0',
+  values: undefined,
+  typeCast: true,
+  nestTables: false,
+  _resultSet: null,
+  _results: [],
+  _fields: [],
+  _index: 0,
+  _loadError: null }
+[2018-08-17T16:21:07.682] [INFO] ./logs/sponge-city-2018-08-16.log - sql-format => select * from sp_task_organization where parent_id > 0
+[2018-08-17T16:21:07.682] [INFO] ./logs/sponge-city-2018-08-16.log - sql => select * from sp_task_organization where parent_id > 0
+[2018-08-17T16:21:07.683] [INFO] ./logs/sponge-city-2018-08-16.log - query => Query {
+  _events: {},
+  _eventsCount: 0,
+  _maxListeners: undefined,
+  _callback: [Function],
+  _callSite: Error
+    at Pool.query (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/mysql/lib/Pool.js:199:23)
+    at CommonDao._query (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/commonDao.js:89:24)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/commonDao.js:70:12
+    at new Promise (<anonymous>)
+    at CommonDao.select (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/commonDao.js:69:12)
+    at Function._callee2$ (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/taskDao.js:23:38)
+    at tryCatch (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:62:40)
+    at Generator.invoke [as _invoke] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:296:22)
+    at Generator.prototype.(anonymous function) [as next] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:114:21)
+    at step (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4286:191)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4286:437
+    at new Promise (<anonymous>)
+    at Function.<anonymous> (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4286:99)
+    at Function.getChildList (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4372:22)
+    at _callee5$ (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/services/taskService.js:79:33)
+    at tryCatch (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:62:40)
+    at Generator.invoke [as _invoke] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:296:22)
+    at Generator.prototype.(anonymous function) [as next] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:114:21)
+    at step (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:3928:191)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:3928:361
+    at process._tickCallback (internal/process/next_tick.js:68:7),
+  _ended: false,
+  _timeout: undefined,
+  _idleNext: null,
+  _idlePrev: null,
+  _idleStart: null,
+  _idleTimeout: -1,
+  _repeat: null,
+  sql: 'select * from sp_task_organization where parent_id > 0',
+  values: undefined,
+  typeCast: true,
+  nestTables: false,
+  _resultSet: null,
+  _results: [],
+  _fields: [],
+  _index: 0,
+  _loadError: null }
+[2018-08-17T16:22:35.168] [INFO] ./logs/sponge-city-2018-08-16.log - sql-format => select * from sp_task_organization where parent_id=0
+[2018-08-17T16:22:35.169] [INFO] ./logs/sponge-city-2018-08-16.log - sql => select * from sp_task_organization where parent_id=0
+[2018-08-17T16:22:35.169] [INFO] ./logs/sponge-city-2018-08-16.log - query => Query {
+  _events: {},
+  _eventsCount: 0,
+  _maxListeners: undefined,
+  _callback: [Function],
+  _callSite: Error
+    at Pool.query (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/mysql/lib/Pool.js:199:23)
+    at CommonDao._query (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/commonDao.js:89:24)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/commonDao.js:70:12
+    at new Promise (<anonymous>)
+    at CommonDao.select (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/commonDao.js:69:12)
+    at Function._callee$ (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/taskDao.js:13:38)
+    at tryCatch (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:62:40)
+    at Generator.invoke [as _invoke] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:296:22)
+    at Generator.prototype.(anonymous function) [as next] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:114:21)
+    at step (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4286:191)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4286:437
+    at new Promise (<anonymous>)
+    at Function.<anonymous> (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4286:99)
+    at Function.getOrganizationList (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4332:21)
+    at _callee5$ (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/services/taskService.js:78:32)
+    at tryCatch (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:62:40)
+    at Generator.invoke [as _invoke] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:296:22)
+    at Generator.prototype.(anonymous function) [as next] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:114:21)
+    at step (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:3928:191)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:3928:437
+    at new Promise (<anonymous>)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:3928:99,
+  _ended: false,
+  _timeout: undefined,
+  _idleNext: null,
+  _idlePrev: null,
+  _idleStart: null,
+  _idleTimeout: -1,
+  _repeat: null,
+  sql: 'select * from sp_task_organization where parent_id=0',
+  values: undefined,
+  typeCast: true,
+  nestTables: false,
+  _resultSet: null,
+  _results: [],
+  _fields: [],
+  _index: 0,
+  _loadError: null }
+[2018-08-17T16:22:35.176] [INFO] ./logs/sponge-city-2018-08-16.log - sql-format => select * from sp_task_organization where parent_id > 0
+[2018-08-17T16:22:35.176] [INFO] ./logs/sponge-city-2018-08-16.log - sql => select * from sp_task_organization where parent_id > 0
+[2018-08-17T16:22:35.177] [INFO] ./logs/sponge-city-2018-08-16.log - query => Query {
+  _events: {},
+  _eventsCount: 0,
+  _maxListeners: undefined,
+  _callback: [Function],
+  _callSite: Error
+    at Pool.query (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/mysql/lib/Pool.js:199:23)
+    at CommonDao._query (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/commonDao.js:89:24)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/commonDao.js:70:12
+    at new Promise (<anonymous>)
+    at CommonDao.select (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/commonDao.js:69:12)
+    at Function._callee2$ (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/taskDao.js:23:38)
+    at tryCatch (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:62:40)
+    at Generator.invoke [as _invoke] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:296:22)
+    at Generator.prototype.(anonymous function) [as next] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:114:21)
+    at step (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4286:191)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4286:437
+    at new Promise (<anonymous>)
+    at Function.<anonymous> (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4286:99)
+    at Function.getChildList (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4372:22)
+    at _callee5$ (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/services/taskService.js:79:33)
+    at tryCatch (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:62:40)
+    at Generator.invoke [as _invoke] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:296:22)
+    at Generator.prototype.(anonymous function) [as next] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:114:21)
+    at step (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:3928:191)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:3928:361
+    at process._tickCallback (internal/process/next_tick.js:68:7),
+  _ended: false,
+  _timeout: undefined,
+  _idleNext: null,
+  _idlePrev: null,
+  _idleStart: null,
+  _idleTimeout: -1,
+  _repeat: null,
+  sql: 'select * from sp_task_organization where parent_id > 0',
+  values: undefined,
+  typeCast: true,
+  nestTables: false,
+  _resultSet: null,
+  _results: [],
+  _fields: [],
+  _index: 0,
+  _loadError: null }
+[2018-08-17T16:23:17.007] [INFO] ./logs/sponge-city-2018-08-16.log - sql-format => select * from sp_task_organization where parent_id=0
+[2018-08-17T16:23:17.007] [INFO] ./logs/sponge-city-2018-08-16.log - sql => select * from sp_task_organization where parent_id=0
+[2018-08-17T16:23:17.007] [INFO] ./logs/sponge-city-2018-08-16.log - query => Query {
+  _events: {},
+  _eventsCount: 0,
+  _maxListeners: undefined,
+  _callback: [Function],
+  _callSite: Error
+    at Pool.query (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/mysql/lib/Pool.js:199:23)
+    at CommonDao._query (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/commonDao.js:89:24)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/commonDao.js:70:12
+    at new Promise (<anonymous>)
+    at CommonDao.select (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/commonDao.js:69:12)
+    at Function._callee$ (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/taskDao.js:13:38)
+    at tryCatch (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:62:40)
+    at Generator.invoke [as _invoke] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:296:22)
+    at Generator.prototype.(anonymous function) [as next] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:114:21)
+    at step (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4286:191)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4286:437
+    at new Promise (<anonymous>)
+    at Function.<anonymous> (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4286:99)
+    at Function.getOrganizationList (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4332:21)
+    at _callee5$ (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/services/taskService.js:78:32)
+    at tryCatch (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:62:40)
+    at Generator.invoke [as _invoke] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:296:22)
+    at Generator.prototype.(anonymous function) [as next] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:114:21)
+    at step (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:3928:191)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:3928:437
+    at new Promise (<anonymous>)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:3928:99,
+  _ended: false,
+  _timeout: undefined,
+  _idleNext: null,
+  _idlePrev: null,
+  _idleStart: null,
+  _idleTimeout: -1,
+  _repeat: null,
+  sql: 'select * from sp_task_organization where parent_id=0',
+  values: undefined,
+  typeCast: true,
+  nestTables: false,
+  _resultSet: null,
+  _results: [],
+  _fields: [],
+  _index: 0,
+  _loadError: null }
+[2018-08-17T16:23:17.015] [INFO] ./logs/sponge-city-2018-08-16.log - sql-format => select * from sp_task_organization where parent_id > 0
+[2018-08-17T16:23:17.015] [INFO] ./logs/sponge-city-2018-08-16.log - sql => select * from sp_task_organization where parent_id > 0
+[2018-08-17T16:23:17.015] [INFO] ./logs/sponge-city-2018-08-16.log - query => Query {
+  _events: {},
+  _eventsCount: 0,
+  _maxListeners: undefined,
+  _callback: [Function],
+  _callSite: Error
+    at Pool.query (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/mysql/lib/Pool.js:199:23)
+    at CommonDao._query (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/commonDao.js:89:24)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/commonDao.js:70:12
+    at new Promise (<anonymous>)
+    at CommonDao.select (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/commonDao.js:69:12)
+    at Function._callee2$ (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/taskDao.js:23:38)
+    at tryCatch (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:62:40)
+    at Generator.invoke [as _invoke] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:296:22)
+    at Generator.prototype.(anonymous function) [as next] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:114:21)
+    at step (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4286:191)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4286:437
+    at new Promise (<anonymous>)
+    at Function.<anonymous> (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4286:99)
+    at Function.getChildList (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4372:22)
+    at _callee5$ (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/services/taskService.js:79:33)
+    at tryCatch (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:62:40)
+    at Generator.invoke [as _invoke] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:296:22)
+    at Generator.prototype.(anonymous function) [as next] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:114:21)
+    at step (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:3928:191)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:3928:361
+    at process._tickCallback (internal/process/next_tick.js:68:7),
+  _ended: false,
+  _timeout: undefined,
+  _idleNext: null,
+  _idlePrev: null,
+  _idleStart: null,
+  _idleTimeout: -1,
+  _repeat: null,
+  sql: 'select * from sp_task_organization where parent_id > 0',
+  values: undefined,
+  typeCast: true,
+  nestTables: false,
+  _resultSet: null,
+  _results: [],
+  _fields: [],
+  _index: 0,
+  _loadError: null }
+[2018-08-17T16:23:20.169] [INFO] ./logs/sponge-city-2018-08-16.log - sql-format => select * from sp_task_organization where parent_id=0
+[2018-08-17T16:23:20.169] [INFO] ./logs/sponge-city-2018-08-16.log - sql => select * from sp_task_organization where parent_id=0
+[2018-08-17T16:23:20.169] [INFO] ./logs/sponge-city-2018-08-16.log - query => Query {
+  _events: {},
+  _eventsCount: 0,
+  _maxListeners: undefined,
+  _callback: [Function],
+  _callSite: Error
+    at Pool.query (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/mysql/lib/Pool.js:199:23)
+    at CommonDao._query (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/commonDao.js:89:24)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/commonDao.js:70:12
+    at new Promise (<anonymous>)
+    at CommonDao.select (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/commonDao.js:69:12)
+    at Function._callee$ (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/taskDao.js:13:38)
+    at tryCatch (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:62:40)
+    at Generator.invoke [as _invoke] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:296:22)
+    at Generator.prototype.(anonymous function) [as next] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:114:21)
+    at step (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4286:191)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4286:437
+    at new Promise (<anonymous>)
+    at Function.<anonymous> (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4286:99)
+    at Function.getOrganizationList (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4332:21)
+    at _callee5$ (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/services/taskService.js:78:32)
+    at tryCatch (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:62:40)
+    at Generator.invoke [as _invoke] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:296:22)
+    at Generator.prototype.(anonymous function) [as next] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:114:21)
+    at step (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:3928:191)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:3928:437
+    at new Promise (<anonymous>)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:3928:99,
+  _ended: false,
+  _timeout: undefined,
+  _idleNext: null,
+  _idlePrev: null,
+  _idleStart: null,
+  _idleTimeout: -1,
+  _repeat: null,
+  sql: 'select * from sp_task_organization where parent_id=0',
+  values: undefined,
+  typeCast: true,
+  nestTables: false,
+  _resultSet: null,
+  _results: [],
+  _fields: [],
+  _index: 0,
+  _loadError: null }
+[2018-08-17T16:23:20.178] [INFO] ./logs/sponge-city-2018-08-16.log - sql-format => select * from sp_task_organization where parent_id > 0
+[2018-08-17T16:23:20.178] [INFO] ./logs/sponge-city-2018-08-16.log - sql => select * from sp_task_organization where parent_id > 0
+[2018-08-17T16:23:20.179] [INFO] ./logs/sponge-city-2018-08-16.log - query => Query {
+  _events: {},
+  _eventsCount: 0,
+  _maxListeners: undefined,
+  _callback: [Function],
+  _callSite: Error
+    at Pool.query (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/mysql/lib/Pool.js:199:23)
+    at CommonDao._query (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/commonDao.js:89:24)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/commonDao.js:70:12
+    at new Promise (<anonymous>)
+    at CommonDao.select (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/commonDao.js:69:12)
+    at Function._callee2$ (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/taskDao.js:23:38)
+    at tryCatch (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:62:40)
+    at Generator.invoke [as _invoke] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:296:22)
+    at Generator.prototype.(anonymous function) [as next] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:114:21)
+    at step (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4286:191)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4286:437
+    at new Promise (<anonymous>)
+    at Function.<anonymous> (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4286:99)
+    at Function.getChildList (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4372:22)
+    at _callee5$ (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/services/taskService.js:79:33)
+    at tryCatch (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:62:40)
+    at Generator.invoke [as _invoke] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:296:22)
+    at Generator.prototype.(anonymous function) [as next] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:114:21)
+    at step (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:3928:191)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:3928:361
+    at process._tickCallback (internal/process/next_tick.js:68:7),
+  _ended: false,
+  _timeout: undefined,
+  _idleNext: null,
+  _idlePrev: null,
+  _idleStart: null,
+  _idleTimeout: -1,
+  _repeat: null,
+  sql: 'select * from sp_task_organization where parent_id > 0',
+  values: undefined,
+  typeCast: true,
+  nestTables: false,
+  _resultSet: null,
+  _results: [],
+  _fields: [],
+  _index: 0,
+  _loadError: null }
+[2018-08-17T16:23:22.536] [INFO] ./logs/sponge-city-2018-08-16.log - sql-format => select * from sp_task_organization where parent_id=0
+[2018-08-17T16:23:22.536] [INFO] ./logs/sponge-city-2018-08-16.log - sql => select * from sp_task_organization where parent_id=0
+[2018-08-17T16:23:22.537] [INFO] ./logs/sponge-city-2018-08-16.log - query => Query {
+  _events: {},
+  _eventsCount: 0,
+  _maxListeners: undefined,
+  _callback: [Function],
+  _callSite: Error
+    at Pool.query (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/mysql/lib/Pool.js:199:23)
+    at CommonDao._query (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/commonDao.js:89:24)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/commonDao.js:70:12
+    at new Promise (<anonymous>)
+    at CommonDao.select (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/commonDao.js:69:12)
+    at Function._callee$ (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/taskDao.js:13:38)
+    at tryCatch (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:62:40)
+    at Generator.invoke [as _invoke] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:296:22)
+    at Generator.prototype.(anonymous function) [as next] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:114:21)
+    at step (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4286:191)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4286:437
+    at new Promise (<anonymous>)
+    at Function.<anonymous> (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4286:99)
+    at Function.getOrganizationList (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4332:21)
+    at _callee5$ (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/services/taskService.js:78:32)
+    at tryCatch (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:62:40)
+    at Generator.invoke [as _invoke] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:296:22)
+    at Generator.prototype.(anonymous function) [as next] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:114:21)
+    at step (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:3928:191)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:3928:437
+    at new Promise (<anonymous>)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:3928:99,
+  _ended: false,
+  _timeout: undefined,
+  _idleNext: null,
+  _idlePrev: null,
+  _idleStart: null,
+  _idleTimeout: -1,
+  _repeat: null,
+  sql: 'select * from sp_task_organization where parent_id=0',
+  values: undefined,
+  typeCast: true,
+  nestTables: false,
+  _resultSet: null,
+  _results: [],
+  _fields: [],
+  _index: 0,
+  _loadError: null }
+[2018-08-17T16:23:22.545] [INFO] ./logs/sponge-city-2018-08-16.log - sql-format => select * from sp_task_organization where parent_id > 0
+[2018-08-17T16:23:22.545] [INFO] ./logs/sponge-city-2018-08-16.log - sql => select * from sp_task_organization where parent_id > 0
+[2018-08-17T16:23:22.545] [INFO] ./logs/sponge-city-2018-08-16.log - query => Query {
+  _events: {},
+  _eventsCount: 0,
+  _maxListeners: undefined,
+  _callback: [Function],
+  _callSite: Error
+    at Pool.query (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/mysql/lib/Pool.js:199:23)
+    at CommonDao._query (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/commonDao.js:89:24)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/commonDao.js:70:12
+    at new Promise (<anonymous>)
+    at CommonDao.select (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/commonDao.js:69:12)
+    at Function._callee2$ (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/taskDao.js:23:38)
+    at tryCatch (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:62:40)
+    at Generator.invoke [as _invoke] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:296:22)
+    at Generator.prototype.(anonymous function) [as next] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:114:21)
+    at step (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4286:191)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4286:437
+    at new Promise (<anonymous>)
+    at Function.<anonymous> (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4286:99)
+    at Function.getChildList (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4372:22)
+    at _callee5$ (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/services/taskService.js:79:33)
+    at tryCatch (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:62:40)
+    at Generator.invoke [as _invoke] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:296:22)
+    at Generator.prototype.(anonymous function) [as next] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:114:21)
+    at step (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:3928:191)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:3928:361
+    at process._tickCallback (internal/process/next_tick.js:68:7),
+  _ended: false,
+  _timeout: undefined,
+  _idleNext: null,
+  _idlePrev: null,
+  _idleStart: null,
+  _idleTimeout: -1,
+  _repeat: null,
+  sql: 'select * from sp_task_organization where parent_id > 0',
+  values: undefined,
+  typeCast: true,
+  nestTables: false,
+  _resultSet: null,
+  _results: [],
+  _fields: [],
+  _index: 0,
+  _loadError: null }
+[2018-08-17T16:24:02.225] [INFO] ./logs/sponge-city-2018-08-16.log - sql-format => select * from sp_task_organization where parent_id=0
+[2018-08-17T16:24:02.225] [INFO] ./logs/sponge-city-2018-08-16.log - sql => select * from sp_task_organization where parent_id=0
+[2018-08-17T16:24:02.226] [INFO] ./logs/sponge-city-2018-08-16.log - query => Query {
+  _events: {},
+  _eventsCount: 0,
+  _maxListeners: undefined,
+  _callback: [Function],
+  _callSite: Error
+    at Pool.query (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/mysql/lib/Pool.js:199:23)
+    at CommonDao._query (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/commonDao.js:89:24)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/commonDao.js:70:12
+    at new Promise (<anonymous>)
+    at CommonDao.select (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/commonDao.js:69:12)
+    at Function._callee$ (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/taskDao.js:13:38)
+    at tryCatch (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:62:40)
+    at Generator.invoke [as _invoke] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:296:22)
+    at Generator.prototype.(anonymous function) [as next] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:114:21)
+    at step (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4286:191)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4286:437
+    at new Promise (<anonymous>)
+    at Function.<anonymous> (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4286:99)
+    at Function.getOrganizationList (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4332:21)
+    at _callee5$ (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/services/taskService.js:78:32)
+    at tryCatch (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:62:40)
+    at Generator.invoke [as _invoke] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:296:22)
+    at Generator.prototype.(anonymous function) [as next] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:114:21)
+    at step (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:3928:191)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:3928:437
+    at new Promise (<anonymous>)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:3928:99,
+  _ended: false,
+  _timeout: undefined,
+  _idleNext: null,
+  _idlePrev: null,
+  _idleStart: null,
+  _idleTimeout: -1,
+  _repeat: null,
+  sql: 'select * from sp_task_organization where parent_id=0',
+  values: undefined,
+  typeCast: true,
+  nestTables: false,
+  _resultSet: null,
+  _results: [],
+  _fields: [],
+  _index: 0,
+  _loadError: null }
+[2018-08-17T16:24:02.231] [INFO] ./logs/sponge-city-2018-08-16.log - sql-format => select * from sp_task_organization where parent_id > 0
+[2018-08-17T16:24:02.232] [INFO] ./logs/sponge-city-2018-08-16.log - sql => select * from sp_task_organization where parent_id > 0
+[2018-08-17T16:24:02.232] [INFO] ./logs/sponge-city-2018-08-16.log - query => Query {
+  _events: {},
+  _eventsCount: 0,
+  _maxListeners: undefined,
+  _callback: [Function],
+  _callSite: Error
+    at Pool.query (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/mysql/lib/Pool.js:199:23)
+    at CommonDao._query (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/commonDao.js:89:24)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/commonDao.js:70:12
+    at new Promise (<anonymous>)
+    at CommonDao.select (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/commonDao.js:69:12)
+    at Function._callee2$ (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/taskDao.js:23:38)
+    at tryCatch (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:62:40)
+    at Generator.invoke [as _invoke] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:296:22)
+    at Generator.prototype.(anonymous function) [as next] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:114:21)
+    at step (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4286:191)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4286:437
+    at new Promise (<anonymous>)
+    at Function.<anonymous> (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4286:99)
+    at Function.getChildList (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4372:22)
+    at _callee5$ (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/services/taskService.js:79:33)
+    at tryCatch (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:62:40)
+    at Generator.invoke [as _invoke] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:296:22)
+    at Generator.prototype.(anonymous function) [as next] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:114:21)
+    at step (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:3928:191)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:3928:361
+    at process._tickCallback (internal/process/next_tick.js:68:7),
+  _ended: false,
+  _timeout: undefined,
+  _idleNext: null,
+  _idlePrev: null,
+  _idleStart: null,
+  _idleTimeout: -1,
+  _repeat: null,
+  sql: 'select * from sp_task_organization where parent_id > 0',
+  values: undefined,
+  typeCast: true,
+  nestTables: false,
+  _resultSet: null,
+  _results: [],
+  _fields: [],
+  _index: 0,
+  _loadError: null }
+[2018-08-17T16:24:10.055] [INFO] ./logs/sponge-city-2018-08-16.log - sql-format => select * from sp_task_organization where parent_id=0
+[2018-08-17T16:24:10.055] [INFO] ./logs/sponge-city-2018-08-16.log - sql => select * from sp_task_organization where parent_id=0
+[2018-08-17T16:24:10.055] [INFO] ./logs/sponge-city-2018-08-16.log - query => Query {
+  _events: {},
+  _eventsCount: 0,
+  _maxListeners: undefined,
+  _callback: [Function],
+  _callSite: Error
+    at Pool.query (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/mysql/lib/Pool.js:199:23)
+    at CommonDao._query (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/commonDao.js:89:24)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/commonDao.js:70:12
+    at new Promise (<anonymous>)
+    at CommonDao.select (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/commonDao.js:69:12)
+    at Function._callee$ (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/taskDao.js:13:38)
+    at tryCatch (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:62:40)
+    at Generator.invoke [as _invoke] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:296:22)
+    at Generator.prototype.(anonymous function) [as next] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:114:21)
+    at step (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4286:191)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4286:437
+    at new Promise (<anonymous>)
+    at Function.<anonymous> (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4286:99)
+    at Function.getOrganizationList (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4332:21)
+    at _callee5$ (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/services/taskService.js:78:32)
+    at tryCatch (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:62:40)
+    at Generator.invoke [as _invoke] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:296:22)
+    at Generator.prototype.(anonymous function) [as next] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:114:21)
+    at step (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:3928:191)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:3928:437
+    at new Promise (<anonymous>)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:3928:99,
+  _ended: false,
+  _timeout: undefined,
+  _idleNext: null,
+  _idlePrev: null,
+  _idleStart: null,
+  _idleTimeout: -1,
+  _repeat: null,
+  sql: 'select * from sp_task_organization where parent_id=0',
+  values: undefined,
+  typeCast: true,
+  nestTables: false,
+  _resultSet: null,
+  _results: [],
+  _fields: [],
+  _index: 0,
+  _loadError: null }
+[2018-08-17T16:24:10.065] [INFO] ./logs/sponge-city-2018-08-16.log - sql-format => select * from sp_task_organization where parent_id > 0
+[2018-08-17T16:24:10.065] [INFO] ./logs/sponge-city-2018-08-16.log - sql => select * from sp_task_organization where parent_id > 0
+[2018-08-17T16:24:10.065] [INFO] ./logs/sponge-city-2018-08-16.log - query => Query {
+  _events: {},
+  _eventsCount: 0,
+  _maxListeners: undefined,
+  _callback: [Function],
+  _callSite: Error
+    at Pool.query (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/mysql/lib/Pool.js:199:23)
+    at CommonDao._query (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/commonDao.js:89:24)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/commonDao.js:70:12
+    at new Promise (<anonymous>)
+    at CommonDao.select (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/commonDao.js:69:12)
+    at Function._callee2$ (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/taskDao.js:23:38)
+    at tryCatch (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:62:40)
+    at Generator.invoke [as _invoke] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:296:22)
+    at Generator.prototype.(anonymous function) [as next] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:114:21)
+    at step (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4286:191)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4286:437
+    at new Promise (<anonymous>)
+    at Function.<anonymous> (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4286:99)
+    at Function.getChildList (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:4372:22)
+    at _callee5$ (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/services/taskService.js:79:33)
+    at tryCatch (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:62:40)
+    at Generator.invoke [as _invoke] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:296:22)
+    at Generator.prototype.(anonymous function) [as next] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:114:21)
+    at step (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:3928:191)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:3928:361
+    at process._tickCallback (internal/process/next_tick.js:68:7),
+  _ended: false,
+  _timeout: undefined,
+  _idleNext: null,
+  _idlePrev: null,
+  _idleStart: null,
+  _idleTimeout: -1,
+  _repeat: null,
+  sql: 'select * from sp_task_organization where parent_id > 0',
+  values: undefined,
+  typeCast: true,
+  nestTables: false,
+  _resultSet: null,
+  _results: [],
+  _fields: [],
+  _index: 0,
+  _loadError: null }

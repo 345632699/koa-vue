@@ -1,0 +1,150 @@
+[2019-09-09T19:01:37.403] [DEBUG] ./logs/sponge-city-2019-09-09.log - getProjectList sql... SELECT sp_project.id as id,sn,sp_project.name as name,region_id,region_name,proj_type as project_type,proj_type_name as project_type_name,engin_type as engineering,engin_type_name as engineering_name,project_area,investment,DATE_FORMAT(sp_project.start_time, '%Y-%m-%d') as start_time,DATE_FORMAT(sp_project.end_time, '%Y-%m-%d') as end_time,created_department,DATE_FORMAT(sp_project.created_time, '%Y-%m-%d') as created_time,sp_proj_life_cycle.title AS current_status,sp_proj_life_cycle.state AS state,CASE WHEN sp_proj_life_cycle.state=2 AND sp_proj_life_cycle.file_path IS NOT NULL THEN 1 ELSE 0 END AS update_status FROM sp_project
+              LEFT JOIN sp_proj_life_cycle ON sp_project.id=sp_proj_life_cycle.project_id
+              WHERE  
+    (sp_proj_life_cycle.state=2 OR 
+    (sp_proj_life_cycle.state=1 AND sp_proj_life_cycle.type&16=16)) ORDER BY update_status DESC, id DESC LIMIT 0,10
+[2019-09-09T19:01:37.404] [INFO] ./logs/sponge-city-2019-09-09.log - sql-format => SELECT sp_project.id as id,sn,sp_project.name as name,region_id,region_name,proj_type as project_type,proj_type_name as project_type_name,engin_type as engineering,engin_type_name as engineering_name,project_area,investment,DATE_FORMAT(sp_project.start_time, '%Y-%m-%d') as start_time,DATE_FORMAT(sp_project.end_time, '%Y-%m-%d') as end_time,created_department,DATE_FORMAT(sp_project.created_time, '%Y-%m-%d') as created_time,sp_proj_life_cycle.title AS current_status,sp_proj_life_cycle.state AS state,CASE WHEN sp_proj_life_cycle.state=2 AND sp_proj_life_cycle.file_path IS NOT NULL THEN 1 ELSE 0 END AS update_status FROM sp_project
+              LEFT JOIN sp_proj_life_cycle ON sp_project.id=sp_proj_life_cycle.project_id
+              WHERE  
+    (sp_proj_life_cycle.state=2 OR 
+    (sp_proj_life_cycle.state=1 AND sp_proj_life_cycle.type&16=16)) ORDER BY update_status DESC, id DESC LIMIT 0,10
+[2019-09-09T19:01:37.404] [INFO] ./logs/sponge-city-2019-09-09.log - sql => SELECT sp_project.id as id,sn,sp_project.name as name,region_id,region_name,proj_type as project_type,proj_type_name as project_type_name,engin_type as engineering,engin_type_name as engineering_name,project_area,investment,DATE_FORMAT(sp_project.start_time, '%Y-%m-%d') as start_time,DATE_FORMAT(sp_project.end_time, '%Y-%m-%d') as end_time,created_department,DATE_FORMAT(sp_project.created_time, '%Y-%m-%d') as created_time,sp_proj_life_cycle.title AS current_status,sp_proj_life_cycle.state AS state,CASE WHEN sp_proj_life_cycle.state=2 AND sp_proj_life_cycle.file_path IS NOT NULL THEN 1 ELSE 0 END AS update_status FROM sp_project
+              LEFT JOIN sp_proj_life_cycle ON sp_project.id=sp_proj_life_cycle.project_id
+              WHERE  
+    (sp_proj_life_cycle.state=2 OR 
+    (sp_proj_life_cycle.state=1 AND sp_proj_life_cycle.type&16=16)) ORDER BY update_status DESC, id DESC LIMIT 0,10
+[2019-09-09T19:01:37.407] [INFO] ./logs/sponge-city-2019-09-09.log - query => Query {
+  _events: {},
+  _eventsCount: 0,
+  _maxListeners: undefined,
+  _callback: [Function],
+  _callSite: Error
+    at Pool.query (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/mysql/lib/Pool.js:199:23)
+    at CommonDao._query (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/commonDao.js:89:24)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/commonDao.js:70:12
+    at new Promise (<anonymous>)
+    at CommonDao.select (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/commonDao.js:69:12)
+    at ProjectDao._callee2$ (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/projectDao.js:78:36)
+    at tryCatch (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:62:40)
+    at Generator.invoke [as _invoke] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:296:22)
+    at Generator.prototype.(anonymous function) [as next] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:114:21)
+    at step (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:5459:191)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:5459:437
+    at new Promise (<anonymous>)
+    at ProjectDao.<anonymous> (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:5459:99)
+    at ProjectDao.getProjectList (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:5608:22)
+    at _callee2$ (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/services/projectService.js:59:36)
+    at tryCatch (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:62:40)
+    at Generator.invoke [as _invoke] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:296:22)
+    at Generator.prototype.(anonymous function) [as next] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:114:21)
+    at step (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:3348:191)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:3348:437
+    at new Promise (<anonymous>)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:3348:99,
+  _ended: false,
+  _timeout: undefined,
+  _idleNext: null,
+  _idlePrev: null,
+  _idleStart: null,
+  _idleTimeout: -1,
+  _repeat: null,
+  sql: 'SELECT sp_project.id as id,sn,sp_project.name as name,region_id,region_name,proj_type as project_type,proj_type_name as project_type_name,engin_type as engineering,engin_type_name as engineering_name,project_area,investment,DATE_FORMAT(sp_project.start_time, \'%Y-%m-%d\') as start_time,DATE_FORMAT(sp_project.end_time, \'%Y-%m-%d\') as end_time,created_department,DATE_FORMAT(sp_project.created_time, \'%Y-%m-%d\') as created_time,sp_proj_life_cycle.title AS current_status,sp_proj_life_cycle.state AS state,CASE WHEN sp_proj_life_cycle.state=2 AND sp_proj_life_cycle.file_path IS NOT NULL THEN 1 ELSE 0 END AS update_status FROM sp_project\n              LEFT JOIN sp_proj_life_cycle ON sp_project.id=sp_proj_life_cycle.project_id\n              WHERE  \n    (sp_proj_life_cycle.state=2 OR \n    (sp_proj_life_cycle.state=1 AND sp_proj_life_cycle.type&16=16)) ORDER BY update_status DESC, id DESC LIMIT 0,10',
+  values: undefined,
+  typeCast: true,
+  nestTables: false,
+  _resultSet: null,
+  _results: [],
+  _fields: [],
+  _index: 0,
+  _loadError: null }
+[2019-09-09T19:01:45.735] [INFO] ./logs/sponge-city-2019-09-09.log - sql-format => select * from sp_task_organization where parent_id=0
+[2019-09-09T19:01:45.735] [INFO] ./logs/sponge-city-2019-09-09.log - sql => select * from sp_task_organization where parent_id=0
+[2019-09-09T19:01:45.736] [INFO] ./logs/sponge-city-2019-09-09.log - query => Query {
+  _events: {},
+  _eventsCount: 0,
+  _maxListeners: undefined,
+  _callback: [Function],
+  _callSite: Error
+    at Pool.query (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/mysql/lib/Pool.js:199:23)
+    at CommonDao._query (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/commonDao.js:89:24)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/commonDao.js:70:12
+    at new Promise (<anonymous>)
+    at CommonDao.select (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/commonDao.js:69:12)
+    at Function._callee$ (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/taskDao.js:13:38)
+    at tryCatch (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:62:40)
+    at Generator.invoke [as _invoke] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:296:22)
+    at Generator.prototype.(anonymous function) [as next] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:114:21)
+    at step (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:10772:191)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:10772:437
+    at new Promise (<anonymous>)
+    at Function.<anonymous> (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:10772:99)
+    at Function.getOrganizationList (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:10818:21)
+    at _callee5$ (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/services/taskService.js:281:32)
+    at tryCatch (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:62:40)
+    at Generator.invoke [as _invoke] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:296:22)
+    at Generator.prototype.(anonymous function) [as next] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:114:21)
+    at step (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:8196:191)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:8196:437
+    at new Promise (<anonymous>)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:8196:99,
+  _ended: false,
+  _timeout: undefined,
+  _idleNext: null,
+  _idlePrev: null,
+  _idleStart: null,
+  _idleTimeout: -1,
+  _repeat: null,
+  sql: 'select * from sp_task_organization where parent_id=0',
+  values: undefined,
+  typeCast: true,
+  nestTables: false,
+  _resultSet: null,
+  _results: [],
+  _fields: [],
+  _index: 0,
+  _loadError: null }
+[2019-09-09T19:01:55.744] [INFO] ./logs/sponge-city-2019-09-09.log - sql-format => select * from sp_task_organization where parent_id > 0
+[2019-09-09T19:01:55.744] [INFO] ./logs/sponge-city-2019-09-09.log - sql => select * from sp_task_organization where parent_id > 0
+[2019-09-09T19:01:55.744] [INFO] ./logs/sponge-city-2019-09-09.log - query => Query {
+  _events: {},
+  _eventsCount: 0,
+  _maxListeners: undefined,
+  _callback: [Function],
+  _callSite: Error
+    at Pool.query (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/mysql/lib/Pool.js:199:23)
+    at CommonDao._query (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/commonDao.js:89:24)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/commonDao.js:70:12
+    at new Promise (<anonymous>)
+    at CommonDao.select (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/commonDao.js:69:12)
+    at Function._callee2$ (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/dao/taskDao.js:23:38)
+    at tryCatch (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:62:40)
+    at Generator.invoke [as _invoke] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:296:22)
+    at Generator.prototype.(anonymous function) [as next] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:114:21)
+    at step (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:10772:191)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:10772:437
+    at new Promise (<anonymous>)
+    at Function.<anonymous> (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:10772:99)
+    at Function.getChildList (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:10858:22)
+    at _callee5$ (/Users/xu/Desktop/project/hmcs/sponge-city/build/webpack:/server/services/taskService.js:282:33)
+    at tryCatch (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:62:40)
+    at Generator.invoke [as _invoke] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:296:22)
+    at Generator.prototype.(anonymous function) [as next] (/Users/xu/Desktop/project/hmcs/sponge-city/node_modules/regenerator-runtime/runtime.js:114:21)
+    at step (/Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:8196:191)
+    at /Users/xu/Desktop/project/hmcs/sponge-city/build/main.js:8196:361
+    at process._tickCallback (internal/process/next_tick.js:68:7),
+  _ended: false,
+  _timeout: undefined,
+  _idleNext: null,
+  _idlePrev: null,
+  _idleStart: null,
+  _idleTimeout: -1,
+  _repeat: null,
+  sql: 'select * from sp_task_organization where parent_id > 0',
+  values: undefined,
+  typeCast: true,
+  nestTables: false,
+  _resultSet: null,
+  _results: [],
+  _fields: [],
+  _index: 0,
+  _loadError: null }

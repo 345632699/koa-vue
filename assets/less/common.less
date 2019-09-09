@@ -1,0 +1,89 @@
+//全局通用样式
+@titleFontSize: 20px;
+@subTitleFontSize: 16px;
+@normalFontSize: 14px;
+@titleColor: #3A434A;
+@textColor: #555A67;
+@textHover: #3F9EFF;
+@textBgColor: #F5F7FA;
+
+.page_content {
+	overflow-y: auto;
+	width: 100%;
+	height: 100%;
+	border: 10px solid #e4e8f1;
+}
+
+.header-container {
+	background-color: #fff;
+	position: relative;
+	.header {
+		background-color: #fff;
+		color: #3a434a;
+		font-size: 20px;
+		text-align: left;
+		padding: 30px;
+		border-bottom: 1px solid #e4e8f1;
+	}
+	.div-right {
+		display: inline-block;
+		position: absolute;
+		right: 20px;
+	}
+	/*要求父元素为 position: relative*/
+	.div-middle {
+		position: absolute;
+		top: 50%;
+		transform: translate(0, -50%);
+	}
+}
+
+.return-btn {
+	background: #E1F1FF;
+	border-radius: 100px;
+	font-size: 14px;
+	color: #3F9EFF;
+	width: 128px;
+	height: 36px;
+	border: 1px solid #99CFFF;
+	line-height: 5px;
+}
+
+.confirm-btn {
+	background: #3F9EFF;
+	border-radius: 100px;
+	font-size: 14px;
+	color: #FFFFFF;
+	width: 128px;
+	border: none;
+	height: 36px;
+	line-height: 5px;
+}
+
+.btn-add {
+	background: #E1F1FF;
+	border: 1px solid #99CFFF;
+	border-radius: 100px;
+	font-size: 14px;
+	color: #3F9EFF;
+	letter-spacing: 0;
+	text-align: center;
+	width: 100px;
+	height: 30px;
+	line-height: 5px;
+}
+
+.course {
+	cursor: pointer;
+}
+
+.is-danger {
+	color: red;
+}
+.el-input__inner{
+	 height: 30px;
+	 line-height: 30px;
+ }
+.el-input__icon{
+	line-height: 30px;
+}
